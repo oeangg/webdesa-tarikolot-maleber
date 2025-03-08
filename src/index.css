@@ -44,6 +44,14 @@
     @apply text-lg font-semibold;
   }
 
+  input {
+    @apply px-4 py-2 text-base font-normal border border-primaryColor focus:outline-none placeholder:text-sm placeholder:font-thin focus:border-2;
+  }
+
+  textarea {
+    @apply px-4 py-1 h-20 text-base font-normal border border-primaryColor focus:outline-none placeholder:text-base placeholder:font-extralight focus:border-2;
+  }
+
   body {
     background-color: rgb(var(--backgroundColor));
     color: rgb(var(--primaryColor));

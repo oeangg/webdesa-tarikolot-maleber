@@ -13,10 +13,12 @@ type PropsType = {
 
 export const Navbar = ({ onClick, isMobile, header }: PropsType) => {
   const location = useLocation();
-  const [submenu, setSubMenu] = useState(false);
+  const [openSubMenu, setOpenSubMenu] = useState<{
+    [key: number]: boolean;
+  }>({});
 
-  const handleSubMenu = () => {
-    setSubMenu(!submenu);
+  const handleSubMenu = (id: number) => {
+    setOpenSubMenu((prev) => ({ ...prev, [id]: !prev[id] }));
   };
 
   return (
@@ -30,7 +32,7 @@ export const Navbar = ({ onClick, isMobile, header }: PropsType) => {
         className={cn(
           "hidden font-normal tracking-wide text-base duration-300 transition-all ease-in-out  md:flex flex-row justify-evenly items-center max-w-5xl w-full mx-auto ",
           isMobile
-            ? "absolute flex flex-col gap-4 bg-backgroundColor text-primaryColor py-10 z-30  left-0 top-14"
+            ? "absolute flex flex-col gap-4 bg-backgroundColor shadow-xl text-primaryColor py-10 z-30  left-0 top-14"
             : "hidden"
         )}
       >
@@ -48,7 +50,7 @@ export const Navbar = ({ onClick, isMobile, header }: PropsType) => {
                 <TiArrowSortedDown
                   size={22}
                   className=" cursor-pointer"
-                  onClick={handleSubMenu}
+                  onClick={() => handleSubMenu(link.id)}
                 />
               </span>
             ) : (
@@ -59,12 +61,18 @@ export const Navbar = ({ onClick, isMobile, header }: PropsType) => {
                 {link.text}
               </NavLink>
             )}
-            {submenu && (
+            {openSubMenu[link.id] && (
               <ul
-                onMouseLeave={() => setSubMenu(false)}
+                onMouseLeave={() =>
+                  setOpenSubMenu((prev) => ({ ...prev, [link.id]: false }))
+                }
                 className={cn(
                   " z-[999] shadow-md bg-secondaryColor  text-primaryColor",
-                  !isMobile ? "absolute top-16 flex flex-col" : "relative "
+                  isMobile
+                    ? "relative"
+                    : header
+                    ? " absolute top-14 flex flex-col"
+                    : "absolute top-16 flex flex-col"
                 )}
               >
                 {link.submenu.map((sb, index) => (
@@ -72,7 +80,15 @@ export const Navbar = ({ onClick, isMobile, header }: PropsType) => {
                     key={index}
                     className="px-6 py-2 hover:bg-highlightColor hover:text-backgroundColor"
                   >
-                    <NavLink onClick={() => setSubMenu(false)} to={sb.href}>
+                    <NavLink
+                      onClick={() =>
+                        setOpenSubMenu((prev) => ({
+                          ...prev,
+                          [link.id]: false,
+                        }))
+                      }
+                      to={sb.href}
+                    >
                       {sb.text}
                     </NavLink>
                   </li>

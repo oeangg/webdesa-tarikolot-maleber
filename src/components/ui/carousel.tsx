@@ -4,7 +4,7 @@ interface CarouselProps {
   images: string[];
 }
 
-const Carousel: React.FC<CarouselProps> = ({ images }) => {
+export const Carousel: React.FC<CarouselProps> = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef<HTMLDivElement>(null);
 
@@ -50,13 +50,13 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
       </div>
       <button
         onClick={goToPrevious}
-        className="absolute top-1/2 left-4 transform h-9 w-9 flex items-center justify-center -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full"
+        className="absolute top-1/2 left-4 transform h-9 w-9 flex items-center justify-center -translate-y-1/2 bg-black bg-opacity-25 text-white p-2 rounded-full"
       >
         &lt;
       </button>
       <button
         onClick={goToNext}
-        className="absolute top-1/2 right-4 transform h-9 w-9 flex items-center justify-center -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full"
+        className="absolute top-1/2 right-4 transform h-9 w-9 flex items-center justify-center -translate-y-1/2 bg-black bg-opacity-25 text-white p-2 rounded-full"
       >
         &gt;
       </button>
@@ -65,7 +65,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
         {images.map((_, index) => (
           <button
             key={index}
-            className={`h-[6px] w-10 rounded-full ${
+            className={`h-[6px] w-10 rounded-full opacity-75 ${
               currentIndex === index
                 ? "bg-highlightColor"
                 : "bg-backgroundColor"
@@ -77,5 +77,3 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
     </div>
   );
 };
-
-export default Carousel;

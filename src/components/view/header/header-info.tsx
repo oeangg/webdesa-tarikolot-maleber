@@ -1,6 +1,6 @@
 import { RiHomeSmileFill } from "react-icons/ri";
 import { LinkButton } from "../../ui/link";
-import { FaPhoneFlip } from "react-icons/fa6";
+import { FaPhone } from "react-icons/fa6";
 import { NavLink } from "react-router";
 import { cn } from "../../../tools/cn";
 
@@ -38,8 +38,8 @@ export const HeaderInfo = ({ header }: PropsType) => {
         </div>
 
         <div className="hidden md:flex">
-          <LinkButton href="/contact" theme="border">
-            Hubungi Kami <FaPhoneFlip size={16} />
+          <LinkButton href="/contact" theme="border" size="md">
+            <FaPhone size={16} /> Hubungi Kami
           </LinkButton>
         </div>
       </div>

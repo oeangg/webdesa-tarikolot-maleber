@@ -6,7 +6,7 @@ import { CardStatistikPenduduk } from "../../ui/card";
 export const StatisticPenduduk = () => {
   return (
     <div className=" bg-slate-100 w-full">
-      <div className="mx-auto py-10 px-4 md:px-0 max-w-5xl flex flex-col gap-20">
+      <div className="mx-auto py-10 px-4 md:px-0 max-w-5xl flex flex-col ">
         <SubTitle
           subtitle="Statistik "
           title="Jumlah Penduduk "

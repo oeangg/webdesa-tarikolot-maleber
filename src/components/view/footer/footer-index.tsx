@@ -6,14 +6,14 @@ import { NavLink } from "react-router";
 export const FooterPage = () => {
   return (
     <div className="flex flex-col bg-secondaryColor ">
-      <div className="px-5 md:px-20 py-10 flex flex-col md:flex-row gap-5 justify-between ">
-        <div className="basis-1/2 space-y-5">
+      <div className="px-5 md:px-20 py-20 flex flex-col md:flex-row gap-5 justify-between ">
+        <div className="basis-1/2 space-y-5 border-b border-backgroundColor md:border-b-0 md:border-r">
           <RiHomeSmileFill size={72} className="text-highlightColor" />
           <div className="space-y-2">
-            <p className="text-base md:text-lg tracking-wide font-extrabold uppercase">
+            <p className="text-base md:text-xl tracking-normal font-extrabold ">
               Ti Lembur Balik Deui ka Lembur
             </p>
-            <div className="-space-y-1">
+            <div className="-space-y-1 pb-5">
               <p className="text-base font-light">
                 Websitena urang tarikolot Maleber
               </p>
@@ -24,7 +24,7 @@ export const FooterPage = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-between gap-10 basis-1/2 ">
+        <div className="flex flex-col md:flex-row justify-between gap-14 basis-1/2 ">
           <div className="flex flex-col gap-6 text-lg font-medium basis-2/5">
             <h2>Tautan :</h2>
             <div className="flex flex-col gap-2 text-sm font-normal">
@@ -58,10 +58,10 @@ export const FooterPage = () => {
               </NavLink>
             </div>
           </div>
-          <div className="w-full rounded-xl overflow-hidden border-4 border-hoverColor">
+          <div className="w-full rounded-xl overflow-hidden border-2 border-backgroundColor">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.813998305558!2d108.55660807454245!3d-7.031136368884366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f134f79dcdd1d%3A0x6c915cb193217baf!2sTarikolot%20Maleber!5e0!3m2!1sid!2sid!4v1741334399003!5m2!1sid!2sid"
-              height="250"
+              height="220"
               width="100%"
               style={{ border: 1 }}
               // sandbox="allow-scripts allow-modal"

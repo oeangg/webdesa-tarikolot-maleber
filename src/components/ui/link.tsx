@@ -6,10 +6,11 @@ interface IProps {
   href: string;
   children: React.ReactNode;
   theme: "bg" | "border";
+  size: "sm" | "md";
 }
 
 export const LinkButton = (props: IProps) => {
-  const { href, children, theme } = props;
+  const { href, children, theme, size } = props;
 
   const handleClicktoTopElement = () => {};
 
@@ -18,10 +19,13 @@ export const LinkButton = (props: IProps) => {
       to={href}
       onClick={handleClicktoTopElement}
       className={cn(
-        "group px-5 flex duration-300 w-fit text-base font-normal flex-row items-center gap-2 py-3   rounded-lg",
+        "group flex duration-300 w-fit  flex-row items-center gap-2   rounded-lg",
         theme === "bg"
           ? "bg-primaryColor text-backgroundColor hover:bg-highlightColor "
-          : "border-2 border-primaryColor text-primaryColor hover:bg-hoverColor"
+          : "border-2 border-primaryColor text-primaryColor hover:bg-hoverColor",
+        size === "md"
+          ? "px-5 py-3 text-base font-normal"
+          : "py-1 px-5 text-sm font-light"
       )}
     >
       {children}

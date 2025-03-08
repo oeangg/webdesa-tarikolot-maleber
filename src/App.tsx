@@ -13,12 +13,17 @@ import { useEffect } from "react";
 import { SilsilahPage } from "./pages/silsilah-page";
 import { SambutanPage } from "./pages/sambutan-page";
 import { PerangkatPage } from "./pages/perangkat-page";
+import { NotFoundPage } from "./pages/notfound-page";
+import PerangkatProfilPage from "./pages/perangkat-profil-page";
 
 function ScrollToTop() {
   const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Gulir ke atas saat pathname berubah
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    }); // Gulir ke atas saat pathname berubah
   }, [location.pathname]);
 
   return null; // Komponen ini tidak merender apa pun
@@ -34,14 +39,19 @@ function App() {
           <Route path="/profil" element={<ProfilPage />} />
           <Route path="/visimisi" element={<VisiMisi />} />
           <Route path="/sejarah" element={<SejarahPage />} />
-          <Route path="/silsilah" element={<SilsilahPage />} />
           <Route path="/sambutankadus" element={<SambutanPage />} />
           <Route path="/perangkatdusun" element={<PerangkatPage />} />
+          <Route
+            path="/perangkatdusun/:slug"
+            element={<PerangkatProfilPage />}
+          />
         </Route>
 
+        <Route path="/silsilah" element={<SilsilahPage />} />
         <Route path="/" element={<Homepage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/berita" element={<BeritaPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <FooterPage />
     </>

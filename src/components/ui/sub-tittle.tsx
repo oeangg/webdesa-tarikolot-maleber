@@ -10,7 +10,7 @@ export const SubTitle = ({ subtitle, title, margin }: PropsType) => {
   return (
     <div
       className={cn(
-        "flex flex-col  gap-10",
+        "flex flex-col  gap-10 mb-16",
         margin === "center" ? "justify-center" : "justify-start"
       )}
     >

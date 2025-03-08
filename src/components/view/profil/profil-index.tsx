@@ -16,7 +16,7 @@ export const ProfilIndex = () => {
       <img src={imgProfil} alt="image tarikolot drone" />
 
       <div className="mx-auto">
-        <LinkButton href="/visimisi" theme="border">
+        <LinkButton href="/visimisi" theme="border" size="md">
           Selengkapnya <MdKeyboardDoubleArrowRight size={20} />{" "}
         </LinkButton>
       </div>

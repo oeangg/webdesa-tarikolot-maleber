@@ -1,3 +1,5 @@
+import { ContactIndex } from "../components/view/contact/contact-index";
+
 export function ContactPage() {
-  return <div className="mx-auto max-w-5xl w-full mt-10 ">contactpage</div>;
+  return <ContactIndex />;
 }

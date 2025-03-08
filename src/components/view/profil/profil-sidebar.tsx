@@ -9,7 +9,7 @@ export const ProfilSideBarLayout = () => {
 
   if (profilObject && profilObject.submenu && profilObject.submenu.length > 0) {
     return (
-      <div className="w-full flex flex-col py-10">
+      <div className="w-full flex flex-col py-20">
         <h1 className="mb-8 font-bold tracking-tight text-xl">
           Tentang Kampung :
         </h1>

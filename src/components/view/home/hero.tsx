@@ -5,7 +5,7 @@ import carouselImage2 from "../../../assets/images/hero image/tamal.jpg";
 import carouselImage3 from "../../../assets/images/hero image/tamal2.jpg";
 import carouselImage4 from "../../../assets/images/hero image/tamal4.jpg";
 
-import Carousel from "../../ui/carousel";
+import { Carousel } from "../../ui/carousel";
 import { LinkButton } from "../../ui/link";
 
 export const HeroSection = () => {
@@ -27,7 +27,7 @@ export const HeroSection = () => {
         </div>
 
         <div className="flex justify-center">
-          <LinkButton href="/profil" theme="bg">
+          <LinkButton href="/profil" theme="bg" size="md">
             Profil Kampung <LuMapPinHouse size={20} />
           </LinkButton>
         </div>

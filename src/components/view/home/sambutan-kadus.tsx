@@ -5,10 +5,10 @@ import { SubTitle } from "../../ui/sub-tittle";
 
 export const SambutanKadus = () => {
   return (
-    <div className="max-w-5xl w-full flex flex-col gap-10  mx-auto">
+    <div className="max-w-5xl w-full flex flex-col px-4 md:px-0  mx-auto">
       <SubTitle
         subtitle="Sambutan Kepala Dusun"
-        title="Rocky Gerung, S.Mul"
+        title="Anggi Gumilar"
         margin="center"
       />
       <div className="flex flex-col md:flex-row gap-10">
@@ -36,7 +36,7 @@ export const SambutanKadus = () => {
             debitis. In provident ipsa at consectetur voluptates placeat fugit
             quas nemo!
           </p>
-          <LinkButton href="/sambutankadus" theme="border">
+          <LinkButton href="/sambutankadus" theme="border" size="md">
             Selengkapnya <MdKeyboardDoubleArrowRight size={20} />
           </LinkButton>
         </div>
