@@ -9,7 +9,7 @@ export default function PerangkatProfilPage() {
   const profilPerangkat = listPerangkatDusun.find((p) => p.slug === slug);
 
   return (
-    <div className="py-10 max-w-5xl mx-auto">
+    <div className="py-10 max-w-6xl mx-auto">
       <h2 className="mb-10">Profil Perangkat Dusun </h2>
       {profilPerangkat && <CardProfilPengurusDetail {...profilPerangkat} />}
       <NavLink

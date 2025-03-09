@@ -30,9 +30,9 @@ export const Navbar = ({ onClick, isMobile, header }: PropsType) => {
     >
       <ul
         className={cn(
-          "hidden font-normal tracking-wide text-base duration-300 transition-all ease-in-out  md:flex flex-row justify-evenly items-center max-w-5xl w-full mx-auto ",
+          "hidden font-normal tracking-wide text-base duration-300 transition-all ease-in-out  md:flex flex-row justify-evenly items-center max-w-6xl w-full mx-auto ",
           isMobile
-            ? "absolute flex flex-col gap-4 bg-backgroundColor shadow-xl text-primaryColor py-10 z-30  left-0 top-14"
+            ? "absolute flex flex-col gap-4 bg-secondaryColor shadow-xl text-primaryColor py-10 z-30  left-0 top-14"
             : "hidden"
         )}
       >
@@ -40,8 +40,8 @@ export const Navbar = ({ onClick, isMobile, header }: PropsType) => {
           <li
             key={link.id}
             className={cn(
-              "flex gap-5 hover:text-highlightColor duration-300",
-              location.pathname === link.href && "text-secondaryColor"
+              "flex gap-5 hover:text-highlightColor duration-300 ",
+              location.pathname === link.href && "text-hoverColor"
             )}
           >
             {link.submenu.length > 0 ? (
@@ -67,7 +67,7 @@ export const Navbar = ({ onClick, isMobile, header }: PropsType) => {
                   setOpenSubMenu((prev) => ({ ...prev, [link.id]: false }))
                 }
                 className={cn(
-                  " z-[999] shadow-md bg-secondaryColor  text-primaryColor",
+                  " z-[999] shadow-md bg-backgroundSecondary border-b-2 border-highlightColor  text-primaryColor",
                   isMobile
                     ? "relative"
                     : header

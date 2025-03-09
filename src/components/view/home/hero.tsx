@@ -19,11 +19,13 @@ export const HeroSection = () => {
     <div className="relative w-full h-screenMinusNav ">
       <Carousel images={images} />
       <div className="w-2/3 absolute text-center md:space-y-4 left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 font-black text-3xl md:text-5xl lg:text-7xl text-white  ">
-        <p>Wilujeung Sumping</p>
-        <p className="text-2xl md:text-4xl lg:text-6xl">di Tarikolot Maleber</p>
+        <h1>Wilujeung Sumping</h1>
+        <h3 className="text-2xl md:text-4xl lg:text-6xl">
+          di Tarikolot Maleber
+        </h3>
         <div className="text-base md:text-lg font-medium lg:text-xl">
-          <p>Dusun VI tarikolot Desa Maleber Kecamatan Maleber</p>
-          <p>Kabupaten Kuningan, Jawa Barat</p>
+          <h3>Dusun VI tarikolot Desa Maleber Kecamatan Maleber</h3>
+          <h3>Kabupaten Kuningan, Jawa Barat</h3>
         </div>
 
         <div className="flex justify-center">

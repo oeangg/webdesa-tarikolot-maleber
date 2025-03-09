@@ -1,7 +1,7 @@
 export const SilsilahIndex = () => {
   return (
     <div
-      className="py-10 max-w-5xl w-full mx-auto flex flex-col gap-5
+      className="py-10 max-w-6xl w-full mx-auto flex flex-col gap-5
      "
     >
       <h2 className="text-lg font-semibold">Silsilah Kampung Tarikolot</h2>

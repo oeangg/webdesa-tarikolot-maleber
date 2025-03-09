@@ -8,7 +8,7 @@ export const PerangkatIndex = () => {
         Berikut Profil perangkat Dusun VI Tarikolot Desa Maleber, periode Tahun
         2025
       </p>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
+      <div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-6">
         {listPerangkatDusun.map((item) => (
           <CardProfilPengurus key={item.id} {...item} />
         ))}

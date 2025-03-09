@@ -5,18 +5,20 @@ import { LinkButton } from "../../ui/link";
 import { SubTitle } from "../../ui/sub-tittle";
 
 export const TulisanTerbaru = () => {
+  const stulisan = listTulisan.slice(0, 4);
   return (
-    <div className="mx-auto max-w-5xl px-4 md:px-0 ">
+    <div className="mx-auto max-w-6xl px-4 md:px-0 ">
       <SubTitle title="Tulisan terbaru" subtitle="Tulisan" margin="left" />
       <div className=" w-full grid gap-5  md:grid-cols-2 mb-8">
-        {listTulisan.map((tulisan, index) => (
+        {stulisan.map((tulisan, index) => (
           <CardTulisan key={index} {...tulisan} />
         ))}
       </div>
       <div className="flex justify-center items-center">
         <LinkButton href="/tulisan" size="md" theme="bg">
           {" "}
-          Tulisan lainnya <MdKeyboardDoubleArrowRight size={18} />
+          Tulisan lainnya{" "}
+          <MdKeyboardDoubleArrowRight size={18} className="translate-ico" />
         </LinkButton>
       </div>
     </div>

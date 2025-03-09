@@ -6,13 +6,15 @@ export const SambutanKadusIndex = () => {
       <h2>Sambutan Kepala Dusun </h2>
       <div className="space-y-5">
         <p>Assalamualaikum Wr.Wb</p>
-        <img
-          src={imgKadus}
-          height={200}
-          width={200}
-          alt="image kepala dusun"
-          className="float-left pr-5 "
-        />
+        <div className="pr-4 float-left">
+          <img
+            src={imgKadus}
+            height={200}
+            width={200}
+            alt="image kepala dusun"
+            className=" p-2 border border-borderPrimary "
+          />
+        </div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi
           autem repellat eveniet aliquid distinctio quam unde, officiis modi!

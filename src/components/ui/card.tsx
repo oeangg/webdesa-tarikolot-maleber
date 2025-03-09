@@ -37,14 +37,19 @@ export const CardStatistikPenduduk = (props: PropsType) => {
   const { image, jenis, jumlah } = props;
 
   return (
-    <div className="flex flex-row  bg-hoverColor p-10 shadow-md   items-center justify-between gap-2 px-8 text-center duration-300 rounded-xl  hover:border-2 hover:border-highlightColor">
+    <div
+      className="flex flex-row  bg-hoverColor p-10 shadow-lg shadow-secondaryColor/40 items-center justify-between gap-2 px-8 text-center duration-300 rounded-xl  hover:border hover:border-highlightColor/60 hover:shadow-xl hover:shadow-hoverColor/30
+    "
+    >
       {image === "warga" && <img src={imgWarga} alt="warga" />}
       {image === "man" && <img src={imgMan} alt="lakilaki" />}
       {image === "woman" && <img src={imgWoman} alt="perempuan" />}
       {image === "family" && <img src={imgFamily} alt="keluarga" />}
       <div className="flex flex-col justify-start  text-left  gap-2">
         <Counter number={jumlah} />
-        <p className="text-base md:text-lg">{jenis}</p>
+        <p className="text-base md:text-lg font-medium tracking-tight">
+          {jenis}
+        </p>
       </div>
     </div>
   );
@@ -59,7 +64,7 @@ export const CardProfilPengurus = ({
   return (
     <NavLink
       to={`/perangkatdusun/${slug}`}
-      className="group w-40 h-52 shadow-md duration-300 overflow-hidden rounded-xl hover:shadow-primaryColor"
+      className="group w-40 h-52 border p-2 border-borderPrimary duration-300 overflow-hidden  hover:shadow-md"
     >
       <div className="h-36  relative overflow-hidden   bg-slate-200 mb-2   ">
         <img
@@ -90,7 +95,7 @@ export const CardProfilPengurusDetail = ({
           src={photo}
           alt={`photo ${jabatan}`}
           style={{ objectFit: "cover" }}
-          className="shadow-md border border-slate-100 p-1"
+          className="border border-borderPrimary p-2"
         />
       </div>
       <div className="col-span-2 space-y-3">
@@ -114,17 +119,17 @@ export const CardTulisan = ({
   title,
 }: PropsTypeTulisan) => {
   return (
-    <div className="grid-cols-1 grid shadow-sm rounded-md md:grid-cols-2 p-6 gap-5 hover:border hover:border-highlightColor">
+    <div className="group grid-cols-1  grid shadow-sm rounded-md md:grid-cols-2 p-6 gap-5 hover:border hover:border-highlightColor/50 hover:shadow-lg hover:shadow-hoverColor/40">
       <div className="space-y-5">
         <div className="space-y-1">
-          <p className="text-highlightColor tracking-tight text-base font-normal">
+          <p className="text-foregroundSecondary tracking-tight text-base font-normal">
             {date}
           </p>
           <div className="flex flex-row gap-2">
-            <p className="px-2 py-1 text-center w-fit font-light text-xs bg-secondaryColor rounded-md ">
+            <p className="px-2 py-1 text-center w-fit font-light border border-secondaryColor text-xs bg-backgroundSecondary rounded-md ">
               {author}
             </p>
-            <p className="px-2 py-1 text-center w-fit font-light text-xs bg-hoverColor rounded-md ">
+            <p className="px-2 py-1 text-center w-fit font-light text-xs border border-secondaryColor bg-hoverColor rounded-md ">
               {category}
             </p>
           </div>
@@ -138,15 +143,16 @@ export const CardTulisan = ({
         <div className="space-y-2 w-full">
           <LinkButton href={slug} theme="border" size="sm">
             Selengkapnya
-            <MdKeyboardDoubleArrowRight size={18} />
+            <MdKeyboardDoubleArrowRight size={18} className="translate-ico" />
           </LinkButton>
         </div>
       </div>
-      <div className="w-full h-64">
+      <div className="w-full h-64 overflow-hidden ">
         <img
           src={cover}
           alt="image cover"
           style={{ height: "100%", width: "100%", objectFit: "cover" }}
+          className="duration-300 group-hover:scale-105"
         />
       </div>
     </div>
@@ -163,21 +169,22 @@ export const CardBerita = ({
   title,
 }: PropsTypeTulisan) => {
   return (
-    <div className="grid-cols-1 grid shadow-sm rounded-md md:grid-cols-2 p-6 gap-5 hover:border hover:border-highlightColor">
-      <div className="w-full h-64 ">
+    <div className="group grid-cols-1 grid shadow-sm rounded-md md:grid-cols-2 p-6 gap-5 hover:border hover:border-highlightColor/50 hover:shadow-lg hover:shadow-hoverColor/40 ">
+      <div className="w-full h-64 overflow-hidden ">
         <img
           src={cover}
           alt="image cover"
           style={{ height: "100%", width: "100%", objectFit: "cover" }}
+          className="duration-300 group-hover:scale-105"
         />
       </div>
       <div className="space-y-5">
         <div className="space-y-1">
-          <p className="text-highlightColor tracking-tight text-base font-normal">
+          <p className="text-foregroundSecondary tracking-tight text-base font-normal">
             {date}
           </p>
           <div className="flex flex-row gap-2">
-            <p className="px-2 py-1 text-center w-fit font-light text-xs bg-secondaryColor rounded-md ">
+            <p className="px-2 py-1 text-center w-fit font-light text-xs bg-backgroundSecondary border border-secondaryColor rounded-md ">
               {author}
             </p>
             <p className="px-2 py-1 text-center w-fit font-light text-xs border border-secondaryColor rounded-md ">
@@ -194,7 +201,7 @@ export const CardBerita = ({
         <div className="space-y-2 w-full">
           <LinkButton href={slug} theme="border" size="sm">
             Selengkapnya
-            <MdKeyboardDoubleArrowRight size={18} />
+            <MdKeyboardDoubleArrowRight size={18} className="translate-ico" />
           </LinkButton>
         </div>
       </div>

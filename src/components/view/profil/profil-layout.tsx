@@ -12,8 +12,8 @@ export const ProfilLayout = () => {
           style={{ height: 220, width: "100%", objectFit: "cover" }}
         />
       </div>
-      <div className="grid max-w-5xl mx-auto w-full grid-cols-3 gap-10 ">
-        <div className="col-span-2">
+      <div className="grid max-w-6xl px-4 md:px-0 mx-auto w-full md:grid-cols-3 gap-10 ">
+        <div className="col-span-2 py-10">
           <Outlet />
         </div>
         <ProfilSideBarLayout />
