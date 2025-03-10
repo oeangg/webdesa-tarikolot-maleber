@@ -3,7 +3,7 @@ import { listPerangkatDusun } from "../data/list-perangkat-dusun";
 import { CardProfilPengurusDetail } from "../components/ui/card";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
-export default function PerangkatProfilPage() {
+export function PerangkatProfilPage() {
   const { slug } = useParams();
 
   const profilPerangkat = listPerangkatDusun.find((p) => p.slug === slug);

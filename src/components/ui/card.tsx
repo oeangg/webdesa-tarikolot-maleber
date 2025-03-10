@@ -63,7 +63,7 @@ export const CardProfilPengurus = ({
 }: PropsTypePengurus) => {
   return (
     <NavLink
-      to={`/perangkatdusun/${slug}`}
+      to={`/profil/perangkatdusun/${slug}`}
       className="group w-40 h-52 border p-2 border-borderPrimary duration-300 overflow-hidden  hover:shadow-md"
     >
       <div className="h-36  relative overflow-hidden   bg-slate-200 mb-2   ">
@@ -119,7 +119,7 @@ export const CardTulisan = ({
   title,
 }: PropsTypeTulisan) => {
   return (
-    <div className="group grid-cols-1  grid shadow-sm rounded-md md:grid-cols-2 p-6 gap-5 hover:border hover:border-highlightColor/50 hover:shadow-lg hover:shadow-hoverColor/40">
+    <div className="group grid-cols-1  grid  rounded-md md:grid-cols-2 p-6 gap-5 hover:border hover:border-highlightColor/50 hover:shadow-lg hover:shadow-hoverColor/40">
       <div className="space-y-5">
         <div className="space-y-1">
           <p className="text-foregroundSecondary tracking-tight text-base font-normal">
@@ -134,14 +134,14 @@ export const CardTulisan = ({
             </p>
           </div>
         </div>
-        <h1 className="text-base md:text-lg lg:text-xl font-medium line-clamp-2 tracking-wide ">
+        <h1 className="text-base md:text-lg lg:text-xl text-primaryColor/90 font-medium line-clamp-2 tracking-wide ">
           {title}
         </h1>
         <p className="line-clamp-3 leading-4 text-base font-light">
           {content_p1}
         </p>
         <div className="space-y-2 w-full">
-          <LinkButton href={slug} theme="border" size="sm">
+          <LinkButton href={`/tulisan/${slug}`} theme="border" size="sm">
             Selengkapnya
             <MdKeyboardDoubleArrowRight size={18} className="translate-ico" />
           </LinkButton>
@@ -169,7 +169,7 @@ export const CardBerita = ({
   title,
 }: PropsTypeTulisan) => {
   return (
-    <div className="group grid-cols-1 grid shadow-sm rounded-md md:grid-cols-2 p-6 gap-5 hover:border hover:border-highlightColor/50 hover:shadow-lg hover:shadow-hoverColor/40 ">
+    <div className="group grid-cols-1 grid  rounded-md md:grid-cols-2 p-6 gap-5 hover:border hover:border-highlightColor/50 hover:shadow-lg hover:shadow-hoverColor/40 ">
       <div className="w-full h-64 overflow-hidden ">
         <img
           src={cover}
@@ -192,14 +192,14 @@ export const CardBerita = ({
             </p>
           </div>
         </div>
-        <h1 className="text-base md:text-lg lg:text-xl font-medium line-clamp-2 tracking-wide ">
+        <h1 className="text-base md:text-lg lg:text-xl font-medium text-primaryColor/90  line-clamp-2 tracking-wide ">
           {title}
         </h1>
         <p className="line-clamp-3 leading-4 text-base font-light">
           {content_p1}
         </p>
         <div className="space-y-2 w-full">
-          <LinkButton href={slug} theme="border" size="sm">
+          <LinkButton href={`/berita/${slug}`} theme="border" size="sm">
             Selengkapnya
             <MdKeyboardDoubleArrowRight size={18} className="translate-ico" />
           </LinkButton>

@@ -8,8 +8,8 @@ import {
 export const InfoKontak = () => {
   return (
     <div className="w-full p-16  bg-secondaryColor">
-      <h1 className="text-2xl font-semibold mb-8">Info</h1>
-      <div className="space-y-3">
+      <h1 className="text-2xl font-semibold mb-8 text-primaryColor">Info</h1>
+      <div className="space-y-3 text-primaryColor/90">
         <div className="flex flex-row gap-3 text-sm font-light   items-center">
           <MdOutlinePlace size={18} /> Dusun VI tarikolot Desa Maleber, Kuningan
           Jawa Barat

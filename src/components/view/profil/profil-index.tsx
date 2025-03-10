@@ -13,7 +13,13 @@ export const ProfilIndex = () => {
         Barat.
       </p>
 
-      <img src={imgProfil} alt="image tarikolot drone" />
+      <div className="p-4 border border-borderPrimary w-full">
+        <img
+          src={imgProfil}
+          alt="image tarikolot drone"
+          style={{ width: "100%", height: "400px", objectFit: "cover" }}
+        />
+      </div>
 
       <div className="mx-auto">
         <LinkButton href="/visimisi" theme="border" size="md">
@@ -22,15 +28,17 @@ export const ProfilIndex = () => {
       </div>
 
       <h2>Berikut video Kampung Tarikolot :</h2>
-      <iframe
-        height="400"
-        src="https://www.youtube.com/embed/ij4Ezk1MCvk?si=gu7BRkaR6lOU08Gc"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allowFullScreen
-        className="w-full"
-      ></iframe>
+      <div className="p-4 border border-borderPrimary w-full">
+        <iframe
+          height="400"
+          src="https://www.youtube.com/embed/ij4Ezk1MCvk?si=gu7BRkaR6lOU08Gc"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+          className="w-full"
+        ></iframe>
+      </div>
     </div>
   );
 };

@@ -43,20 +43,20 @@
   }
 
   h2 {
-    @apply text-xl font-semibold text-foregroundSecondary;
+    @apply text-xl font-semibold text-foregroundSecondary/80;
   }
 
   input {
-    @apply px-4 py-2 text-base font-normal border border-primaryColor focus:outline-none placeholder:text-sm placeholder:font-thin focus:border-2;
+    @apply px-4 py-2 text-base font-normal border border-primaryColor rounded-lg focus:outline-none placeholder:text-sm placeholder:font-light focus:border-2;
   }
 
   textarea {
-    @apply px-4 py-1 h-20 text-base font-normal border border-primaryColor focus:outline-none placeholder:text-sm placeholder:font-thin focus:border-2;
+    @apply px-4 py-1 h-20 text-base font-normal border border-primaryColor rounded-lg focus:outline-none placeholder:text-sm placeholder:font-light focus:border-2;
   }
 
   body {
     background-color: rgb(var(--backgroundColor));
-    color: rgb(var(--foregroundSecondary));
+    color: rgb(var(--foregroundPrimary));
   }
 
   html {

@@ -4,8 +4,8 @@ export const FooterBottom = () => {
   return (
     <div className="bg-primaryColor flex flex-row justify-between items-center gap-5 px-5 md:px-20 py-5  ">
       <p className="text-backgroundColor/70 font-light text-xs">
-        Copyright &#169; {new Date().getFullYear()} Tarikolot Maleber Dev, All
-        Right Reserved
+        Copyright &#169; {new Date().getFullYear()} Tarikolot Maleber Digital,
+        All Right Reserved
       </p>
       <div className="flex flex-row gap-3 text-backgroundColor/70">
         <NavLink

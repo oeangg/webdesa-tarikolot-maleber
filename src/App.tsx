@@ -14,7 +14,12 @@ import { SilsilahPage } from "./pages/silsilah-page";
 import { SambutanPage } from "./pages/sambutan-page";
 import { PerangkatPage } from "./pages/perangkat-page";
 import { NotFoundPage } from "./pages/notfound-page";
-import PerangkatProfilPage from "./pages/perangkat-profil-page";
+import { PerangkatProfilPage } from "./pages/perangkat-profil-page";
+import { TulisanPage } from "./pages/tulisan-page";
+import { PelayananPage } from "./pages/pelayanan-page";
+import { KeuanganPage } from "./pages/keuangan-page";
+import BeritaDetailpage from "./pages/berita-detail-page";
+import { TulisanDetailPage } from "./pages/tulisan-detail";
 
 function ScrollToTop() {
   const location = useLocation();
@@ -42,15 +47,20 @@ function App() {
           <Route path="/sambutankadus" element={<SambutanPage />} />
           <Route path="/perangkatdusun" element={<PerangkatPage />} />
           <Route
-            path="/perangkatdusun/:slug"
+            path="/profil/perangkatdusun/:slug"
             element={<PerangkatProfilPage />}
           />
         </Route>
 
-        <Route path="/silsilah" element={<SilsilahPage />} />
         <Route path="/" element={<Homepage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/berita" element={<BeritaPage />} />
+        <Route path="/berita/:slug" element={<BeritaDetailpage />} />
+        <Route path="/tulisan" element={<TulisanPage />} />
+        <Route path="/tulisan/:slug" element={<TulisanDetailPage />} />
+        <Route path="/keuangan" element={<KeuanganPage />} />
+        <Route path="/pelayanan" element={<PelayananPage />} />
+        <Route path="/silsilah" element={<SilsilahPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <FooterPage />

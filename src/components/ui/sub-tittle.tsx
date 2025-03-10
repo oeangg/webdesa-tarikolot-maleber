@@ -1,7 +1,7 @@
 import { cn } from "../../tools/cn";
 
 type PropsType = {
-  subtitle: string;
+  subtitle?: string;
   title: string;
   margin: "left" | "center";
 };
@@ -21,9 +21,11 @@ export const SubTitle = ({ subtitle, title, margin }: PropsType) => {
             : "text-left"
         }
       >
-        <h1 className="text-base  font-light tracking-widest uppercase text-highlightColor">
-          {subtitle}
-        </h1>
+        {subtitle && (
+          <h1 className="text-base  font-light tracking-widest uppercase text-highlightColor">
+            {subtitle}
+          </h1>
+        )}
         <p
           className={
             "text-3xl lg:text-5xl font-extrabold italic tracking-tight text-primaryColor "

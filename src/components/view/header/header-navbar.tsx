@@ -41,6 +41,7 @@ export const Navbar = ({ onClick, isMobile, header }: PropsType) => {
             key={link.id}
             className={cn(
               "flex gap-5 hover:text-highlightColor duration-300 ",
+
               location.pathname === link.href && "text-hoverColor"
             )}
           >

@@ -13,8 +13,8 @@ export const HeaderInfo = ({ header }: PropsType) => {
       <div className="max-w-6xl w-full flex flex-row gap-4 mx-auto justify-between  items-center">
         <HeaderLogo />
 
-        <div className="w-1/3  text-xs font-light  text-primaryColor text-right md:font-semibold md:text-center md:text-sm lg:text-base">
-          <p className="leading-5 tracking-wide">
+        <div className="w-1/3  text-xs font-light  text-primaryColor text-right md:font-medium md:text-center md:text-sm lg:text-base">
+          <p className="leading-4 lg:leading-5 lg:tracking-wide md:uppercase">
             Selamat Menunaikan Ibadah Puasa Ramadhan 1446 H
           </p>
         </div>

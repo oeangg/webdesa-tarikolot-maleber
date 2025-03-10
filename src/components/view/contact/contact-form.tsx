@@ -61,7 +61,7 @@ export const FormKontak = () => {
             {...register("nama")}
           />
           {formState.errors.nama && (
-            <p className="text-sm font-light text-red-500">
+            <p className="text-xs font-normal text-red-500">
               {formState.errors.nama.message}
             </p>
           )}
@@ -76,7 +76,7 @@ export const FormKontak = () => {
             {...register("phone")}
           />
           {formState.errors.phone && (
-            <p className="text-sm font-light text-red-500">
+            <p className="text-xs font-normal text-red-500">
               {formState.errors.phone.message}
             </p>
           )}
@@ -90,7 +90,7 @@ export const FormKontak = () => {
             {...register("pesan")}
           />
           {formState.errors.pesan && (
-            <p className="text-sm font-light text-red-500">
+            <p className="text-xs font-normal text-red-500">
               {formState.errors.pesan.message}
             </p>
           )}
