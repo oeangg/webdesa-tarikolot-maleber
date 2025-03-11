@@ -45,7 +45,7 @@ export const CardStatistikPenduduk = (props: PropsType) => {
       {image === "man" && <img src={imgMan} alt="lakilaki" />}
       {image === "woman" && <img src={imgWoman} alt="perempuan" />}
       {image === "family" && <img src={imgFamily} alt="keluarga" />}
-      <div className="flex flex-col justify-start  text-left  gap-2">
+      <div className="flex flex-col justify-start text-primaryColor/90  text-left  gap-2">
         <Counter number={jumlah} />
         <p className="text-base md:text-lg font-medium tracking-tight">
           {jenis}

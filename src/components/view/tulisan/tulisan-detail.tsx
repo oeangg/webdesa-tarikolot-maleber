@@ -1,5 +1,5 @@
 import { NavLink, useParams } from "react-router";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
 import { listTulisan } from "../../../data/tulisan";
 
 export const TulisanDetail = () => {
@@ -40,9 +40,9 @@ export const TulisanDetail = () => {
           </div>
           <NavLink
             to="/tulisan"
-            className="text-xs font-extralight underline flex flex-row justify-end "
+            className="text-xs text-primaryColor/90 font-light  flex flex-row gap-2 "
           >
-            Back to tulisan <MdKeyboardDoubleArrowRight size={16} />
+            <MdKeyboardDoubleArrowLeft size={16} /> Kembali ke halaman Tulisan
           </NavLink>
         </div>
       )}

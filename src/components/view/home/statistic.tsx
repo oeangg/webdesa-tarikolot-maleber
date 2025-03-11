@@ -5,7 +5,7 @@ import { CardStatistikPenduduk } from "../../ui/card";
 
 export const StatisticPenduduk = () => {
   return (
-    <div className=" bg-backgroundSecondary w-full">
+    <div className="  w-full ">
       <div className="mx-auto py-10 px-4 md:px-0 max-w-6xl flex flex-col ">
         <SubTitle
           subtitle="Statistik "

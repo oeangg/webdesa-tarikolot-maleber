@@ -1,6 +1,6 @@
 import { NavLink, useParams } from "react-router";
 import { listBerita } from "../../../data/berita";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
 
 export const BeritaDetail = () => {
   const { slug } = useParams();
@@ -40,9 +40,9 @@ export const BeritaDetail = () => {
           </div>
           <NavLink
             to="/berita"
-            className="text-xs font-extralight underline flex flex-row justify-end "
+            className="text-xs text-primaryColor/90 font-light  flex flex-row gap-2 "
           >
-            Back to berita <MdKeyboardDoubleArrowRight size={16} />
+            <MdKeyboardDoubleArrowLeft size={16} /> Kembali ke halaman Berita
           </NavLink>
         </div>
       )}

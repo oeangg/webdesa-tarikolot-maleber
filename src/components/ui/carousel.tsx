@@ -65,10 +65,10 @@ export const Carousel: React.FC<CarouselProps> = ({ images }) => {
         {images.map((_, index) => (
           <button
             key={index}
-            className={`h-[6px] w-10 rounded-full opacity-75 ${
+            className={`h-2 w-2 rounded-full  ${
               currentIndex === index
-                ? "bg-highlightColor"
-                : "bg-backgroundColor"
+                ? "bg-highlightColor/80"
+                : "bg-backgroundColor/80"
             }`}
             onClick={() => goToSlide(index)}
           />

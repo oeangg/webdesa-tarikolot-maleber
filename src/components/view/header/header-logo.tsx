@@ -14,13 +14,13 @@ export const HeaderLogo = () => {
         style={{ height: "50px", width: "auto" }}
       />
       <div className="flex flex-col -space-y-1 text-sm font-light text-foregroundSecondary ">
-        <span className=" tracking-tight text-xs uppercase">
+        <span className=" tracking-normal text-xs uppercase">
           Dusun VI Tarikolot
         </span>
         <span className="font-light text-highlightColor tracking-widest uppercase">
           Desa Maleber
         </span>
-        <span className="text-xs tracking-wide"> Kuningan Jawa Barat</span>
+        <span className="text-xs tracking-normal"> Kuningan Jawa Barat</span>
       </div>
     </NavLink>
   );

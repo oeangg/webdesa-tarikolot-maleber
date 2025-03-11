@@ -1,29 +1,27 @@
 // import carouselImage1 from "../../../assets/images/ciremai.jpg";
 import { LuMapPinHouse } from "react-icons/lu";
-import carouselImage1 from "../../../assets//images/hero image/mesjid.jpg";
-import carouselImage2 from "../../../assets/images/hero image/tamal.jpg";
-import carouselImage3 from "../../../assets/images/hero image/tamal2.jpg";
-import carouselImage4 from "../../../assets/images/hero image/tamal4.jpg";
+import imgHero_1 from "/gallery/tarikolot_drone (1).jpg";
+import imgHero_2 from "/gallery/mesjid_nurul_yaqin.jpg";
+import imgHero_3 from "/gallery/tarikolot_drone (5).jpg";
+import imgHero_4 from "/gallery/tarikolot_drone (6).jpg";
+import imgHero_5 from "/gallery/tarikolot_drone (4).jpg";
 
 import { Carousel } from "../../ui/carousel";
 import { LinkButton } from "../../ui/link";
 
 export const HeroSection = () => {
-  const images = [
-    carouselImage2,
-    carouselImage3,
-    carouselImage1,
-    carouselImage4,
-  ];
+  const images = [imgHero_1, imgHero_2, imgHero_3, imgHero_4, imgHero_5];
   return (
     <div className="relative w-full h-screenMinusNav ">
       <Carousel images={images} />
-      <div className="w-2/3 absolute text-center md:space-y-4 left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 font-black text-3xl md:text-5xl lg:text-7xl text-white  ">
-        <h1>Wilujeung Sumping</h1>
+      <div className="w-2/3 absolute text-center md:space-y-4 left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2  text-white  ">
+        <h1 className="font-black text-3xl md:text-5xl lg:text-7xl">
+          Wilujeung Sumping
+        </h1>
         <h3 className="text-2xl md:text-4xl lg:text-6xl">
           di Tarikolot Maleber
         </h3>
-        <div className="text-base md:text-lg font-medium lg:text-xl">
+        <div className="text-base md:text-lg font-normal lg:text-xl">
           <h3>Dusun VI tarikolot Desa Maleber Kecamatan Maleber</h3>
           <h3>Kabupaten Kuningan, Jawa Barat</h3>
         </div>

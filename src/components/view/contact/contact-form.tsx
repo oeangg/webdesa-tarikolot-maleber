@@ -50,7 +50,7 @@ export const FormKontak = () => {
         Kami senantiasa berusaha menjadi lebih baik. Silahkan sampaikan kritik
         dan saran Anda melalui kontak di bawah ini :
       </p>
-      <div className="space-y-2">
+      <div className="space-y-4">
         <div className="flex flex-col gap-1">
           <label htmlFor="nama">Nama </label>
           <input
@@ -104,7 +104,7 @@ export const FormKontak = () => {
         <button
           type="submit"
           disabled={loading}
-          className="px-4 py-2 disabled:opacity-70 text-base disabled:cursor-progress font-medium bg-primaryColor text-backgroundColor w-full hover:bg-highlightColor"
+          className="px-4 py-2 disabled:opacity-70 rounded-lg text-base disabled:cursor-progress font-medium bg-primaryColor text-backgroundColor w-full hover:bg-highlightColor"
         >
           {loading ? "Mengirim..." : "Kirim Pesan"}
         </button>
