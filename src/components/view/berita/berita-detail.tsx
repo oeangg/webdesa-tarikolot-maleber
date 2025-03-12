@@ -15,10 +15,10 @@ export const BeritaDetail = () => {
               {findSlugInBerita.title}
             </h1>
             <div className="flex flex-row gap-2">
-              <p className="px-2 py-1 text-center w-fit font-light text-xs bg-backgroundSecondary border border-secondaryColor rounded-md ">
+              <p className="px-2 py-1 text-center w-fit font-light text-xs bg-hoverColor/70 border border-secondaryColor rounded-md ">
                 {findSlugInBerita.date}
               </p>
-              <p className="px-2 py-1 text-center w-fit font-light text-xs bg-hoverColor/70 border border-secondaryColor rounded-md ">
+              <p className="px-2 py-1 text-center w-fit font-light text-xs bg-backgroundSecondary border border-secondaryColor  rounded-md ">
                 {findSlugInBerita.author}
               </p>
               <p className="px-2 py-1 text-center w-fit font-light text-xs border border-secondaryColor rounded-md ">

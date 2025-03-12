@@ -1,5 +1,5 @@
 import { Outlet } from "react-router";
-import imgHeader from "../../../assets/images/headerpage.jpg";
+import imgHeader from "/cover/headerpage.jpg";
 import { ProfilSideBarLayout } from "./profil-sidebar";
 
 export const ProfilLayout = () => {

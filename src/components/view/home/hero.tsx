@@ -15,10 +15,10 @@ export const HeroSection = () => {
     <div className="relative w-full h-screenMinusNav ">
       <Carousel images={images} />
       <div className="w-2/3 absolute text-center md:space-y-4 left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2  text-white  ">
-        <h1 className="font-black text-3xl md:text-5xl lg:text-7xl">
+        <h1 className="font-black text-3xl md:text-5xl lg:text-7xl font-Inter">
           Wilujeung Sumping
         </h1>
-        <h3 className="text-2xl md:text-4xl lg:text-6xl">
+        <h3 className="text-2xl md:text-4xl lg:text-6xl font-Inter">
           di Tarikolot Maleber
         </h3>
         <div className="text-base md:text-lg font-normal lg:text-xl">

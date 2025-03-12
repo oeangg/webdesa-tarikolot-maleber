@@ -2,7 +2,7 @@ export const listPerangkatDusun = [
   {
     id: 1,
     nama: "Anggi Gumilar",
-    photo: "/src/assets/images/anis.jpg",
+    photo: "/photo perangkat dusun/anis.jpg",
     jabatan: "Kepala Dusun",
     slug: "kepala-dusun",
     katakata:
@@ -11,7 +11,7 @@ export const listPerangkatDusun = [
   {
     id: 2,
     nama: "Ukay Karwaji",
-    photo: "/src/assets/images/rocky.jpg",
+    photo: "/photo perangkat dusun/rocky.jpg",
     jabatan: "Ketua BPD",
     slug: "ketua-bpk",
     katakata:
@@ -20,7 +20,7 @@ export const listPerangkatDusun = [
   {
     id: 3,
     nama: "Didin Syaefudin",
-    photo: "/src/assets/images/rocky.jpg",
+    photo: "/photo perangkat dusun/rocky.jpg",
     jabatan: "Ketua RW",
     slug: "ketua-rw",
     katakata:
@@ -29,7 +29,7 @@ export const listPerangkatDusun = [
   {
     id: 4,
     nama: "Kyai Uri Mashuri",
-    photo: "/src/assets/images/anis.jpg",
+    photo: "/photo perangkat dusun/anis.jpg",
     jabatan: "Ketua DKM",
     slug: "ketua-dkm",
     katakata:
@@ -38,7 +38,7 @@ export const listPerangkatDusun = [
   {
     id: 5,
     nama: "Muhammad Syaiful",
-    photo: "/src/assets/images/rocky.jpg",
+    photo: "/photo perangkat dusun/rocky.jpg",
     jabatan: "Ketua RT 11",
     slug: "ketua-rt11",
     katakata:

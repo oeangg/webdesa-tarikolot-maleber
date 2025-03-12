@@ -41,9 +41,15 @@ export const listNavbarLink = [
     href: "/pelayanan",
     submenu: [],
   },
-
   {
     id: 7,
+    text: "UMKM",
+    href: "/umkm",
+    submenu: [],
+  },
+
+  {
+    id: 8,
     text: "HPTM",
     href: "/hptm",
     submenu: [
@@ -54,13 +60,13 @@ export const listNavbarLink = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     text: "Silsilah",
     href: "/silsilah",
     submenu: [],
   },
   {
-    id: 9,
+    id: 10,
     text: "Kontak",
     href: "/contact",
     submenu: [],

@@ -1,4 +1,4 @@
-import imgHeader from "../../../assets/images/home2.png";
+import imgHeader from "/icon/home.png";
 import { NavLink } from "react-router";
 
 export const HeaderLogo = () => {
@@ -11,7 +11,7 @@ export const HeaderLogo = () => {
       <img
         src={imgHeader}
         alt="icon header"
-        style={{ height: "50px", width: "auto" }}
+        style={{ height: "45px", width: "auto" }}
       />
       <div className="flex flex-col -space-y-1 text-sm font-light text-foregroundSecondary ">
         <span className=" tracking-normal text-xs uppercase">

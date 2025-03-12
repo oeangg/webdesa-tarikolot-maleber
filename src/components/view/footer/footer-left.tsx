@@ -1,4 +1,4 @@
-import imgFooter from "../../../assets/images/home2.png";
+import imgFooter from "/icon/home.png";
 
 export const FooterLeft = () => {
   return (

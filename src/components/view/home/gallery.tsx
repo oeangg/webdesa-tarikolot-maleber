@@ -15,6 +15,16 @@ const images = [
     caption: "Pesawahan di Kampung Tarikolot",
   },
   {
+    src: "/gallery/pengajianibuibu.jpg",
+    alt: "gallery/pengajianibuibu",
+    caption: "Shalawatan Ibu Yasinan",
+  },
+  {
+    src: "/gallery/volly.jpg",
+    alt: "gallery/volly",
+    caption: "Lomba Volly antar Dusun",
+  },
+  {
     src: "/gallery/tarikolot_drone (3).jpg",
     alt: "gallery/tarikolot_drone (4)",
     caption: "Pesawahan di Kampung Tarikolot",
@@ -35,6 +45,11 @@ const images = [
     caption: "Kampung Tarikolot dengan perbatasan Ds Parakan",
   },
   {
+    src: "/gallery/agustusan.jpg",
+    alt: "gallery/agustusan",
+    caption: "Lomba 17 Agustus",
+  },
+  {
     src: "/gallery/tarikolot_drone (7).jpg",
     alt: "gallery/tarikolot_drone (7)",
     caption: "Kampung Tarikolot dengan perbatasan Ds Kutamandarakan",
@@ -43,6 +58,23 @@ const images = [
     src: "/gallery/mesjid_nurul_yaqin.jpg",
     alt: "gallery/mesjid_nurul_yaqin",
     caption: "Mesjid Nurul Yaqin Tarikolot",
+  },
+
+  {
+    src: "/gallery/literasianak.jpg",
+    alt: "gallery/literasianak",
+    caption: "Kegiatan Literasi Anak",
+  },
+  {
+    src: "/gallery/pawaiobor.jpg",
+    alt: "gallery/pawaiobor",
+    caption: "Pawai Obor 1 Muharram",
+  },
+
+  {
+    src: "/gallery/lombaagustusan.jpg",
+    alt: "gallery/lombaagustusan",
+    caption: "Kegiatan Lomba 17 Agustus",
   },
 ];
 
@@ -68,13 +100,13 @@ export const GalleryImage = () => {
             architecto maiores eius. Veritatis, voluptate.
           </p>
         </div>
-        <div className="flex flex-wrap w-full h-full gap-2 justify-center items-center  basis-1/2">
+        <div className="flex flex-wrap w-full h-full gap-2 justify-center items-center  basis-2/3">
           {images.map((image, index) => (
             <div
               key={index}
               className={cn(
-                "max-w-40 h-28 overflow-hidden group   ",
-                index % 2 === 0 && "max-w-32 h-32"
+                "max-w-36 h-28 overflow-hidden group   ",
+                index % 2 === 0 && "max-w-28 h-32"
               )}
             >
               <img

@@ -9,7 +9,7 @@ export const StatisticPenduduk = () => {
       <div className="mx-auto py-10 px-4 md:px-0 max-w-6xl flex flex-col ">
         <SubTitle
           subtitle="Statistik "
-          title="Jumlah Penduduk "
+          title="Jumlah penduduk "
           margin="left"
         />
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5">

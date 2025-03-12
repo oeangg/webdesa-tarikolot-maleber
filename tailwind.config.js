@@ -2,6 +2,10 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    fontFamily: {
+      sans: ["Manrope", "sans-serif"],
+      Inter: ["Inter", "sans-serif"],
+    },
     extend: {
       colors: {
         backgroundColor: "rgb(var(--backgroundColor))",

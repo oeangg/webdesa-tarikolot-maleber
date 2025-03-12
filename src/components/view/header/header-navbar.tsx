@@ -57,7 +57,7 @@ export const Navbar = ({ onClick, isMobile, header }: PropsType) => {
             ) : (
               <NavLink
                 to={link.href}
-                className="flex flex-row gap-2 items-center "
+                className="flex flex-row gap-2 items-center  "
               >
                 {link.text}
               </NavLink>
@@ -79,7 +79,7 @@ export const Navbar = ({ onClick, isMobile, header }: PropsType) => {
                 {link.submenu.map((sb, index) => (
                   <li
                     key={index}
-                    className="px-6 py-2 hover:bg-highlightColor hover:text-backgroundColor"
+                    className="w-full px-6 py-2 hover:bg-highlightColor hover:text-backgroundColor"
                   >
                     <NavLink
                       onClick={() =>

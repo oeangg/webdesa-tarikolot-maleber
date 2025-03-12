@@ -1,5 +1,5 @@
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import imgKepalaDusun from "../../../assets/images/rocky.jpg";
+import imgKepalaDusun from "/photo perangkat dusun/rocky.jpg";
 import { LinkButton } from "../../ui/link";
 import { SubTitle } from "../../ui/sub-tittle";
 
@@ -23,7 +23,7 @@ export const SambutanKadus = () => {
         </div>
         <div className="basis-1/2 space-y-5">
           <h2>Assalamualaikum Wr.Wb</h2>
-          <p className="font-light text-base">
+          <p className="font-light text-base ">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
             autem quos ut corporis laboriosam earum accusantium quas. Enim illo
             cupiditate quisquam accusantium, excepturi voluptas omnis ut

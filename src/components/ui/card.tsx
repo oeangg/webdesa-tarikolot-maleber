@@ -1,8 +1,8 @@
 import { Counter } from "./counter";
-import imgFamily from "../../assets/images/family.png";
-import imgMan from "../../assets/images/man.png";
-import imgWoman from "../../assets/images/woman.png";
-import imgWarga from "../../assets/images/warga.png";
+import imgFamily from "/statistik/family.png";
+import imgMan from "/statistik/man.png";
+import imgWoman from "/statistik/woman.png";
+import imgWarga from "/statistik/warga.png";
 import { NavLink } from "react-router";
 import { LinkButton } from "./link";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
@@ -38,7 +38,7 @@ export const CardStatistikPenduduk = (props: PropsType) => {
 
   return (
     <div
-      className="flex flex-row  bg-hoverColor p-10 shadow-lg shadow-secondaryColor/40 items-center justify-between gap-2 px-8 text-center duration-300 rounded-xl  hover:border hover:border-highlightColor/60 hover:shadow-xl hover:shadow-hoverColor/30
+      className="flex flex-row border-[3px] border-secondaryColor/80  bg-hoverColor p-10 shadow-lg shadow-secondaryColor/40 items-center justify-between gap-2 px-8 text-center duration-300 rounded-xl  hover:border-highlightColor/60 hover:shadow-xl  hover:shadow-hoverColor/30
     "
     >
       {image === "warga" && <img src={imgWarga} alt="warga" />}

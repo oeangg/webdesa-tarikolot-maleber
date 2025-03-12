@@ -1,5 +1,5 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,7 +12,8 @@
     --secondaryColor: 186 215 233;
     --highlightColor: 235 69 95;
     --hoverColor: 246 250 185;
-    --foregroundPrimary: 118 113 133;
+    --foregroundPrimary: 99 117 143;
+    /* --foregroundPrimary: 118 113 133; */
     --foregroundSecondary: 2 21 38;
     --borderPrimary: 226 232 240;
     /*     
@@ -44,7 +45,7 @@
   }
 
   h2 {
-    @apply text-xl font-semibold text-foregroundSecondary/80;
+    @apply text-xl font-semibold  text-primaryColor/80;
   }
 
   input {

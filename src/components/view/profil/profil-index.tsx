@@ -1,5 +1,5 @@
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import imgProfil from "../../../assets/images/tamaldrone.jpg";
+import imgProfil from "/gallery/tarikolot_drone (5).jpg";
 import { LinkButton } from "../../ui/link";
 export const ProfilIndex = () => {
   return (

@@ -1,4 +1,4 @@
-import imgKadus from "../../../assets/images/rocky.jpg";
+import imgKadus from "/photo perangkat dusun/rocky.jpg";
 
 export const SambutanKadusIndex = () => {
   return (

@@ -4,7 +4,9 @@ export const FooterRight = () => {
   return (
     <div className="flex flex-col md:flex-row justify-between gap-14 basis-1/2 ">
       <div className="flex flex-col gap-6 text-lg font-medium basis-2/5">
-        <h3 className="text-primaryColor/90 font-semibold text-xl">Tautan :</h3>
+        <h3 className="text-primaryColor/90 tracking-tight font-bold text-xl">
+          Link Tautan :
+        </h3>
         <div className="flex flex-col gap-3 text-sm text-primaryColor/70 font-normal">
           <NavLink to="/profil" className="flex flex-row gap-1 hover:underline">
             <MdKeyboardArrowRight size={20} />
@@ -28,7 +30,7 @@ export const FooterRight = () => {
         </div>
       </div>
       <div className="w-full space-y-4">
-        <h3 className="text-primaryColor/90 font-semibold text-xl">
+        <h3 className="text-primaryColor/90 tracking-tight font-bold text-xl">
           Peta Wilayah :
         </h3>
         <div className="w-full rounded-xl overflow-hidden border-2 border-backgroundColor opacity-70">
