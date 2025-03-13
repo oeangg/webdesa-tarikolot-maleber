@@ -91,7 +91,7 @@ export const GalleryImage = () => {
     <div className="relative w-full bg-gradient-to-r from-blue-200 to-backgroundSecondary py-28">
       <div className="max-w-6xl w-full flex flex-col  md:flex-row-reverse px-4 md:px-0 gap-10 mx-auto">
         <div className="space-y-5 flex-1">
-          <SubTitle margin="left" title="Selayang Pandang" subtitle="Gallery" />
+          <SubTitle margin="left" title="Potret Lembur" subtitle="Gallery" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
             expedita nihil quidem. Molestias soluta sunt unde consequuntur aut
