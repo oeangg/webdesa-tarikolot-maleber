@@ -1,5 +1,5 @@
 import { NavLink, useLocation } from "react-router";
-import { cn } from "../../../tools/cn";
+import { cn } from "../../../lib/utils";
 import { HamburgerMenu } from "./hamburger-menu";
 import { listNavbarLink } from "../../../data/list-navbarLink";
 import { TiArrowSortedDown } from "react-icons/ti";

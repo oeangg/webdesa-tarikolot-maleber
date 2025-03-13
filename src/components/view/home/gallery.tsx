@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { cn } from "../../../tools/cn";
+import { cn } from "../../../lib/utils";
 import { SubTitle } from "../../ui/sub-tittle";
 import { ModalGallery } from "./gallery-modal";
 
@@ -88,7 +88,7 @@ export const GalleryImage = () => {
   };
 
   return (
-    <div className="relative w-full bg-gradient-to-r from-blue-200 to-backgroundSecondary py-20">
+    <div className="relative w-full bg-gradient-to-r from-blue-200 to-backgroundSecondary py-28">
       <div className="max-w-6xl w-full flex flex-col  md:flex-row-reverse px-4 md:px-0 gap-10 mx-auto">
         <div className="space-y-5 flex-1">
           <SubTitle margin="left" title="Selayang Pandang" subtitle="Gallery" />

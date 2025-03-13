@@ -6,6 +6,7 @@ import imgWarga from "/statistik/warga.png";
 import { NavLink } from "react-router";
 import { LinkButton } from "./link";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import { cn } from "../../lib/utils";
 
 type PropsType = {
   jumlah: number;
@@ -31,6 +32,7 @@ type PropsTypeTulisan = {
   content_p3: string;
   author: string;
   category: string;
+  index: number;
 };
 
 export const CardStatistikPenduduk = (props: PropsType) => {
@@ -64,9 +66,9 @@ export const CardProfilPengurus = ({
   return (
     <NavLink
       to={`/profil/perangkatdusun/${slug}`}
-      className="group w-40 h-52 border p-2 border-borderPrimary duration-300 overflow-hidden  hover:shadow-md"
+      className="group w-44 h-56 border p-2 border-borderPrimary duration-300 overflow-hidden  hover:shadow-md"
     >
-      <div className="h-36  relative overflow-hidden   bg-slate-200 mb-2   ">
+      <div className="h-40  relative overflow-hidden   bg-slate-200 mb-1   ">
         <img
           src={photo}
           alt="image kadus"
@@ -117,24 +119,43 @@ export const CardTulisan = ({
   date,
   slug,
   title,
+  index,
 }: PropsTypeTulisan) => {
   return (
-    <div className="group grid-cols-1  grid  rounded-md md:grid-cols-2 p-6 gap-5 hover:border hover:border-highlightColor/50 hover:shadow-lg hover:shadow-hoverColor/40">
-      <div className="space-y-5">
+    <div className="group grid-cols-1  grid  rounded-md md:grid-cols-3 p-6 gap-8 border-b border-borderPrimary/80 ">
+      <div
+        className={cn(
+          "w-full h-52 overflow-hidden",
+          index % 2 === 0 ? "order-1" : "order-2"
+        )}
+      >
+        <img
+          src={cover}
+          alt="image cover"
+          style={{ height: "100%", width: "100%", objectFit: "cover" }}
+          className="duration-300 group-hover:scale-105"
+        />
+      </div>
+      <div
+        className={cn(
+          "space-y-3 col-span-2",
+          index % 2 === 0 ? "order-2" : "order-1"
+        )}
+      >
         <div className="space-y-1">
-          <p className="text-foregroundSecondary tracking-tight text-base font-normal">
+          <p className="text-primaryColor/90 tracking-tight text-base font-normal">
             {date}
           </p>
           <div className="flex flex-row gap-2">
             <p className="px-2 py-1 text-center w-fit font-light border border-secondaryColor text-xs bg-backgroundSecondary rounded-md ">
               {author}
             </p>
-            <p className="px-2 py-1 text-center w-fit font-light text-xs border border-secondaryColor bg-hoverColor rounded-md ">
+            <p className="px-2 py-1 text-center w-fit font-light text-xs border border-secondaryColor  rounded-md ">
               {category}
             </p>
           </div>
         </div>
-        <h1 className="text-base md:text-lg lg:text-xl text-primaryColor/90 font-medium line-clamp-2 tracking-wide ">
+        <h1 className="text-base md:text-lg lg:text-xl text-primaryColor/90 font-semibold line-clamp-2 tracking-tight ">
           {title}
         </h1>
         <p className="line-clamp-3 leading-4 text-base font-light">
@@ -146,14 +167,6 @@ export const CardTulisan = ({
             <MdKeyboardDoubleArrowRight size={18} className="translate-ico" />
           </LinkButton>
         </div>
-      </div>
-      <div className="w-full h-64 overflow-hidden ">
-        <img
-          src={cover}
-          alt="image cover"
-          style={{ height: "100%", width: "100%", objectFit: "cover" }}
-          className="duration-300 group-hover:scale-105"
-        />
       </div>
     </div>
   );
@@ -167,10 +180,16 @@ export const CardBerita = ({
   date,
   slug,
   title,
+  index,
 }: PropsTypeTulisan) => {
   return (
-    <div className="group grid-cols-1 grid  rounded-md md:grid-cols-2 p-6 gap-5 hover:border hover:border-highlightColor/50 hover:shadow-lg hover:shadow-hoverColor/40 ">
-      <div className="w-full h-64 overflow-hidden ">
+    <div className="group grid-cols-1 grid  rounded-md md:grid-cols-3 p-6 gap-8 border-b border-borderPrimary/80">
+      <div
+        className={cn(
+          "w-full h-52 overflow-hidden",
+          index % 2 === 0 ? "order-1" : "order-2"
+        )}
+      >
         <img
           src={cover}
           alt="image cover"
@@ -178,9 +197,14 @@ export const CardBerita = ({
           className="duration-300 group-hover:scale-105"
         />
       </div>
-      <div className="space-y-5">
+      <div
+        className={cn(
+          "space-y-3 col-span-2",
+          index % 2 === 0 ? "order-2" : "order-1"
+        )}
+      >
         <div className="space-y-1">
-          <p className="text-foregroundSecondary tracking-tight text-base font-normal">
+          <p className="text-primaryColor/90 tracking-tight text-base font-normal">
             {date}
           </p>
           <div className="flex flex-row gap-2">
@@ -192,7 +216,7 @@ export const CardBerita = ({
             </p>
           </div>
         </div>
-        <h1 className="text-base md:text-lg lg:text-xl font-medium text-primaryColor/90  line-clamp-2 tracking-wide ">
+        <h1 className="text-base md:text-lg lg:text-xl font-semibold text-primaryColor/90  line-clamp-2 tracking-tight ">
           {title}
         </h1>
         <p className="line-clamp-3 leading-4 text-base font-light">

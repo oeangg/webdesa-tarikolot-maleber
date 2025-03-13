@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { HeaderInfo } from "./header-info";
 import { Navbar } from "./header-navbar";
-import { cn } from "../../../tools/cn";
+import { cn } from "../../../lib/utils";
 
 export const HeaderPage = () => {
   const [isMobile, setIsMobile] = useState(false);

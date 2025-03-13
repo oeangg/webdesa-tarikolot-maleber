@@ -4,7 +4,7 @@ import { LinkButton } from "../../ui/link";
 export const ProfilIndex = () => {
   return (
     <div className="py-10 flex flex-col gap-5">
-      <h2>Profil Singkat Tarikolot</h2>
+      <h2>Profil Singkat</h2>
       <p>
         Tarikolot merupakan salah satu Dusun di Desa Maleber yang terletak di
         selatan Desa Maleber. Berbatasan langsung dengan dua desa yaitu desa

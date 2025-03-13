@@ -49,11 +49,11 @@
   }
 
   input {
-    @apply px-4 py-2 text-base font-normal border border-primaryColor rounded-lg focus:outline-none placeholder:text-sm placeholder:font-light focus:border-2;
+    @apply px-4 py-2 text-base font-normal border border-primaryColor/40 rounded-lg focus:outline-none placeholder:text-sm placeholder:font-light focus:border-2;
   }
 
   textarea {
-    @apply px-4 py-1 h-20 text-base font-normal border border-primaryColor rounded-lg focus:outline-none placeholder:text-sm placeholder:font-light focus:border-2;
+    @apply px-4 py-1 h-20 text-base font-normal border border-primaryColor/40 rounded-lg focus:outline-none placeholder:text-sm placeholder:font-light focus:border-2;
   }
 
   body {

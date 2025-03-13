@@ -1,5 +1,6 @@
 // import imgHero from "../assets/images/tamal.jpg";
 
+import { Banner } from "../components/view/home/banner";
 import { BeritaTerbaru } from "../components/view/home/berita";
 import { GalleryImage } from "../components/view/home/gallery";
 import { HeroSection } from "../components/view/home/hero";
@@ -12,6 +13,7 @@ export function Homepage() {
     <div className="w-full flex flex-col gap-20 mb-20">
       <HeroSection />
       <SambutanKadus />
+      <Banner />
       <BeritaTerbaru />
       <StatisticPenduduk />
       <GalleryImage />

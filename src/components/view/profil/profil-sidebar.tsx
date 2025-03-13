@@ -1,7 +1,7 @@
 import { NavLink } from "react-router";
 import { listNavbarLink } from "../../../data/list-navbarLink";
 import { useLocation } from "react-router";
-import { cn } from "../../../tools/cn";
+import { cn } from "../../../lib/utils";
 
 export const ProfilSideBarLayout = () => {
   const profilMenu = listNavbarLink.find((n) => n.text === "Profil");

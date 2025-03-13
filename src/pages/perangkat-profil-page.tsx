@@ -17,7 +17,7 @@ export function PerangkatProfilPage() {
           to="/perangkatdusun"
           className="text-xs text-primaryColor/90 font-light  flex flex-row gap-2 "
         >
-          <MdKeyboardDoubleArrowLeft size={16} /> Kembali ke Profil
+          <MdKeyboardDoubleArrowLeft size={16} /> Kembali ke halaman Profil
         </NavLink>
       </div>
     </div>

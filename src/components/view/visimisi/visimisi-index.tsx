@@ -1,7 +1,7 @@
 export const VisiMisiIndex = () => {
   return (
     <div className="py-10 flex flex-col gap-5">
-      <h2 className="text-lg font-semibold">Visi Misi</h2>
+      <h2>Visi Misi</h2>
       <p>Berikut yang menjadi visi & misi kepengurusan Dusun VI tarikolot :</p>
       <h2>Visi :</h2>
       <p>

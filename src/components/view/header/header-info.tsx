@@ -1,7 +1,8 @@
 import { LinkButton } from "../../ui/link";
 import { FaPhone } from "react-icons/fa6";
-import { cn } from "../../../tools/cn";
 import { HeaderLogo } from "./header-logo";
+import { GetTime } from "../../../tools/time";
+import { cn } from "../../../lib/utils";
 
 type PropsType = {
   header: boolean;
@@ -15,7 +16,8 @@ export const HeaderInfo = ({ header }: PropsType) => {
 
         <div className="w-1/3  text-xs font-light  text-primaryColor text-right md:font-semibold md:text-center md:text-sm ">
           <p className="leading-4 md:px-10  lg:leading-5 lg:tracking-wide md:uppercase">
-            Selamat Menunaikan Ibadah Puasa Ramadhan 1446 H
+            {/* Selamat Menunaikan Ibadah Puasa Ramadhan 1446 H */}
+            {GetTime()}
           </p>
         </div>
 

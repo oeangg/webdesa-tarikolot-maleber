@@ -1,4 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
+import {
+  MdOutlineArrowBackIos,
+  MdOutlineArrowForwardIos,
+} from "react-icons/md";
 
 interface CarouselProps {
   images: string[];
@@ -50,15 +54,15 @@ export const Carousel: React.FC<CarouselProps> = ({ images }) => {
       </div>
       <button
         onClick={goToPrevious}
-        className="absolute top-1/2 left-4 transform h-9 w-9 flex items-center justify-center -translate-y-1/2 bg-black bg-opacity-25 text-white p-2 rounded-full"
+        className="absolute top-1/2 left-4 transform  flex items-center justify-center -translate-y-1/2 text-white  "
       >
-        &lt;
+        <MdOutlineArrowBackIos size={36} />
       </button>
       <button
         onClick={goToNext}
-        className="absolute top-1/2 right-4 transform h-9 w-9 flex items-center justify-center -translate-y-1/2 bg-black bg-opacity-25 text-white p-2 rounded-full"
+        className="absolute top-1/2 right-4 transform  flex items-center justify-center -translate-y-1/2  text-white"
       >
-        &gt;
+        <MdOutlineArrowForwardIos size={36} />
       </button>
       {/* Indicators */}
       <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 flex space-x-2">
@@ -67,8 +71,8 @@ export const Carousel: React.FC<CarouselProps> = ({ images }) => {
             key={index}
             className={`h-2 w-2 rounded-full  ${
               currentIndex === index
-                ? "bg-highlightColor/80"
-                : "bg-backgroundColor/80"
+                ? "bg-highlightColor"
+                : "bg-backgroundColor"
             }`}
             onClick={() => goToSlide(index)}
           />

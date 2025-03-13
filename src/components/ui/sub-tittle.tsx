@@ -1,4 +1,4 @@
-import { cn } from "../../tools/cn";
+import { cn } from "../../lib/utils";
 
 type PropsType = {
   subtitle?: string;

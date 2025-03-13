@@ -33,7 +33,7 @@ export const FooterRight = () => {
         <h3 className="text-primaryColor/90 tracking-tight font-bold text-xl">
           Peta Wilayah :
         </h3>
-        <div className="w-full rounded-xl overflow-hidden border-2 border-backgroundColor opacity-70">
+        <div className="w-full rounded-xl overflow-hidden shadow-xl  border-2 border-backgroundColor opacity-70">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.813998305558!2d108.55660807454245!3d-7.031136368884366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f134f79dcdd1d%3A0x6c915cb193217baf!2sTarikolot%20Maleber!5e0!3m2!1sid!2sid!4v1741334399003!5m2!1sid!2sid"
             height="220"

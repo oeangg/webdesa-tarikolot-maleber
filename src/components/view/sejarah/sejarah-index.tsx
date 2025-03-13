@@ -1,7 +1,7 @@
 export const SejarahIndex = () => {
   return (
     <div className="py-10 flex flex-col gap-5">
-      <h2>Sejarah Kampung Tarikolot</h2>
+      <h2>Sejarah Kampung </h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi
         autem repellat eveniet aliquid distinctio quam unde, officiis modi!

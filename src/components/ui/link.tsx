@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router";
-import { cn } from "../../tools/cn";
+import { cn } from "../../lib/utils";
 
 interface IProps {
   href: string;

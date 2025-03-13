@@ -1,0 +1,15 @@
+export const categories = [
+  "memeron",
+  "lomba 17 agustus",
+  "17 agustusan",
+  "hptm",
+  "isra miraj",
+  "jumat berkah",
+  "literasi",
+  "tausiyah",
+  "lebaran",
+  "umum",
+  "umkm",
+  "pengajian",
+  "posyandu",
+];

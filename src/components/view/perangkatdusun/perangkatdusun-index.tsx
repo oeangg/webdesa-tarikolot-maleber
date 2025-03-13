@@ -2,7 +2,7 @@ import { listPerangkatDusun } from "../../../data/list-perangkat-dusun";
 import { CardProfilPengurus } from "../../ui/card";
 export const PerangkatIndex = () => {
   return (
-    <div className="py-20 flex flex-col gap-10">
+    <div className="py-10 flex flex-col gap-10">
       <h2>Profil Perangkat Dusun </h2>
       <p>
         Berikut Profil perangkat Dusun VI Tarikolot Desa Maleber, periode Tahun
