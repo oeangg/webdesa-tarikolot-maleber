@@ -12,7 +12,7 @@ export const BeritaTerbaru = () => {
       <SubTitle title="Berita terbaru" subtitle="Berita" margin="center" />
       <div className=" w-full grid gap-5  md:grid-cols-2 mb-8">
         {sberita.map((berita, index) => (
-          <CardBerita key={index} {...berita} />
+          <CardBerita key={index} {...berita} index={index} />
         ))}
       </div>
       <div className="flex justify-center items-center">

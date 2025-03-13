@@ -11,7 +11,7 @@ export const TulisanTerbaru = () => {
       <SubTitle title="Tulisan terbaru" subtitle="Tulisan" margin="left" />
       <div className=" w-full grid gap-5  md:grid-cols-2 mb-8">
         {stulisan.map((tulisan, index) => (
-          <CardTulisan key={index} {...tulisan} />
+          <CardTulisan key={index} {...tulisan} index={index} />
         ))}
       </div>
       <div className="flex justify-center items-center">
