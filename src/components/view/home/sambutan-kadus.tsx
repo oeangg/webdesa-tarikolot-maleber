@@ -5,31 +5,31 @@ import { SubTitle } from "../../ui/sub-tittle";
 
 export const SambutanKadus = () => {
   return (
-    <div className="max-w-6xl w-full flex flex-col px-4 md:px-0  mx-auto">
+    <div className="mx-auto flex w-full max-w-6xl flex-col px-4 md:px-0">
       <SubTitle
         subtitle="Sambutan Kepala Dusun"
         title="Anggi Gumilar"
         margin="center"
       />
-      <div className="flex flex-col md:flex-row gap-10">
-        <div className="basis-1/2 w-full flex justify-center overflow-hidden items-center">
+      <div className="flex flex-col gap-10 md:flex-row">
+        <div className="flex w-full basis-1/2 items-center justify-center overflow-hidden">
           <img
             src={imgKepalaDusun}
             alt="photo kepala dusun"
             height={300}
             width={300}
-            className="p-4 border border-borderPrimary "
+            className="border border-borderPrimary p-4"
           />
         </div>
         <div className="basis-1/2 space-y-5">
           <h2>Assalamualaikum Wr.Wb</h2>
-          <p className="font-light text-base ">
+          <p className="font-normals text-base leading-5 md:leading-7">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            autem quos ut corporis laboriosam earum accusantium quas. Enim illo
+            aute m quos ut corporis laboriosam earum accusantium quas. Enim illo
             cupiditate quisquam accusantium, excepturi voluptas omnis ut
             ratione, voluptates nesciunt eaque!
           </p>
-          <p className="font-light text-base">
+          <p className="text-base font-normal leading-5 md:leading-7">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum ipsa
             magnam sed eveniet ut. Obcaecati quae dolorum eaque quidem neque.
             Repellat iusto eius enim fuga iste optio repellendus unde provident,

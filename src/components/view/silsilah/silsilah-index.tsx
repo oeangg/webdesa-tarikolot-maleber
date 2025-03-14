@@ -1,9 +1,6 @@
 export const SilsilahIndex = () => {
   return (
-    <div
-      className="py-10 max-w-6xl w-full mx-auto flex flex-col gap-5
-     "
-    >
+    <div className="mx-auto flex w-full max-w-6xl flex-col gap-5 px-4 py-10 md:px-0">
       <h2 className="text-lg font-semibold">Silsilah Kampung Tarikolot</h2>
       <p>
         Berikut silsilah kampung tarikolot maleber yang di rangkum dari beberapa

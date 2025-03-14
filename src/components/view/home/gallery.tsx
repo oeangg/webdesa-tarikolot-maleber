@@ -89,8 +89,8 @@ export const GalleryImage = () => {
 
   return (
     <div className="relative w-full bg-gradient-to-r from-blue-200 to-backgroundSecondary py-28">
-      <div className="max-w-6xl w-full flex flex-col  md:flex-row-reverse px-4 md:px-0 gap-10 mx-auto">
-        <div className="space-y-5 flex-1">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-4 md:flex-row-reverse md:px-0">
+        <div className="flex-1 space-y-5">
           <SubTitle margin="left" title="Potret Lembur" subtitle="Gallery" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
@@ -100,20 +100,20 @@ export const GalleryImage = () => {
             architecto maiores eius. Veritatis, voluptate.
           </p>
         </div>
-        <div className="flex flex-wrap w-full h-full gap-2 justify-center items-center  basis-2/3">
+        <div className="flex h-full w-full basis-2/3 flex-wrap items-center justify-center gap-2">
           {images.map((image, index) => (
             <div
               key={index}
               className={cn(
-                "max-w-36 h-28 overflow-hidden group   ",
-                index % 2 === 0 && "max-w-28 h-32"
+                "group h-28 max-w-36 overflow-hidden",
+                index % 2 === 0 && "h-32 max-w-28",
               )}
             >
               <img
                 src={image.src}
                 alt={image.alt}
                 style={{ objectFit: "cover", width: "auto", height: "100%" }}
-                className="duration-500 hover:scale-105 hover:opacity-90 cursor-pointer "
+                className="cursor-pointer duration-500 hover:scale-105 hover:opacity-90"
                 onClick={() => handleOpenModal(index)}
               />
             </div>

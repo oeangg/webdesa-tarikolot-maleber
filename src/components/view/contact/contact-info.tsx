@@ -10,8 +10,8 @@ export const InfoKontak = () => {
     <div className="w-full p-16  bg-secondaryColor">
       <h1 className="text-2xl font-semibold mb-8 text-primaryColor">Info</h1>
       <div className="space-y-3 text-primaryColor/90">
-        <div className="flex flex-row gap-3 text-sm font-light   items-center">
-          <MdOutlinePlace size={18} /> Dusun VI tarikolot Desa Maleber, Kuningan
+        <div className="flex flex-row gap-3 text-xs md:text-sm font-light   items-center">
+          <MdOutlinePlace size={22} /> Dusun VI tarikolot Desa Maleber, Kuningan
           Jawa Barat
         </div>
         <div className="flex flex-row gap-3 text-sm font-light   items-center">

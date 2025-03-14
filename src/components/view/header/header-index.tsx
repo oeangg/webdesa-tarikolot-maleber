@@ -19,27 +19,27 @@ export const HeaderPage = () => {
     }
   };
 
+  const handleResize = () => {
+    if (window.innerWidth >= 768) {
+      setIsMobile(false);
+    }
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", scrollNavbar);
-    window.addEventListener(
-      "resize",
-      () => window.innerWidth >= 768 && setIsMobile(false)
-    );
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.addEventListener("scroll", scrollNavbar);
-      window.addEventListener(
-        "resize",
-        () => window.innerWidth >= 768 && setIsMobile(false)
-      );
+      window.removeEventListener("scroll", scrollNavbar);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   return (
     <header
       className={cn(
-        " w-full bg-backgroundColor",
-        header && "fixed top-0 left-0 right-0 z-50  "
+        "w-full bg-primaryColor",
+        header && "fixed left-0 right-0 top-0 z-50",
       )}
     >
       <HeaderInfo header={header} />

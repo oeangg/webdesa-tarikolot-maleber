@@ -19,39 +19,39 @@ export const ModalGallery = ({ images, onClose, isOpen, index }: PropsType) => {
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex > 0 ? prevIndex - 1 : images.length - 1
+      prevIndex > 0 ? prevIndex - 1 : images.length - 1,
     );
   };
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex < images.length - 1 ? prevIndex + 1 : 0
+      prevIndex < images.length - 1 ? prevIndex + 1 : 0,
     );
   };
 
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] flex justify-center items-center w-full   bg-black bg-opacity-70">
+    <div className="fixed inset-0 z-[9999] flex w-full items-center justify-center bg-black bg-opacity-70">
       <IoClose
         size={44}
         onClick={onClose}
-        className="absolute left-1/2 top-0 -translate-x-1/2 font-bold text-red-500 cursor-pointer"
+        className="absolute left-1/2 top-0 -translate-x-1/2 cursor-pointer font-bold text-red-500 transition-transform duration-300 ease-in-out"
       />
       <MdOutlineArrowBackIosNew
         size={32}
         onClick={handlePrev}
-        className="text-white/80 font-bold cursor-pointer "
+        className="cursor-pointer font-bold text-white/80"
       />
-      <div className="w-full max-w-7xl flex flex-col p-5 items-center  justify-center  ">
+      <div className="flex w-full max-w-7xl flex-col items-center justify-center p-5">
         <img
           src={images[currentIndex].src}
           alt={images[currentIndex].alt}
           style={{ height: "auto", width: "100%", objectFit: "cover" }}
         />
-        <div className="absolute bottom-20 flex flex-col w-1/3 md:w-fit md:p-2 gap-2   md:flex-row items-center bg-black/40  justify-center text-white">
+        <div className="absolute bottom-20 flex w-1/3 flex-col items-center justify-center gap-2 bg-black/40 text-white md:w-fit md:flex-row md:p-2">
           <SlLocationPin size={16} />
-          <p className=" w-2/3 md:w-full font-extralight text-center  md:font-medium text-xs md:text-sm tracking-wide">
+          <p className="w-2/3 text-center text-xs font-extralight tracking-wide md:w-full md:text-sm md:font-medium">
             {images[currentIndex].caption}
           </p>
         </div>
@@ -59,7 +59,7 @@ export const ModalGallery = ({ images, onClose, isOpen, index }: PropsType) => {
       <MdArrowForwardIos
         size={32}
         onClick={handleNext}
-        className="text-white/80 font-bold cursor-pointer"
+        className="cursor-pointer font-bold text-white/80"
       />
     </div>
   );

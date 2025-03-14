@@ -8,11 +8,16 @@
   :root {
     --backgroundColor: 255 255 255;
     --backgroundSecondary: 236 248 249;
-    --primaryColor: 43 52 103;
+    /* #0D92F4 13, 146, 244 */
+    /* #1746A2 23, 70, 162 */
+    /* --primaryColor: 43 52 103; */
+    --primaryColor: 23 70 162;
     --secondaryColor: 186 215 233;
-    --highlightColor: 235 69 95;
+    /* --highlightColor: 235 69 95; */
+    --highlightColor: 13 146 244;
     --hoverColor: 246 250 185;
-    --foregroundPrimary: 99 117 143;
+    /* --foregroundPrimary: 99 117 143; */
+    --foregroundPrimary: 43 52 103;
     /* --foregroundPrimary: 118 113 133; */
     --foregroundSecondary: 2 21 38;
     --borderPrimary: 226 232 240;
@@ -45,15 +50,15 @@
   }
 
   h2 {
-    @apply text-xl font-semibold  text-primaryColor/80;
+    @apply text-xl font-semibold tracking-wide text-primaryColor/80;
   }
 
   input {
-    @apply px-4 py-2 text-base font-normal border border-primaryColor/40 rounded-lg focus:outline-none placeholder:text-sm placeholder:font-light focus:border-2;
+    @apply rounded-lg border border-primaryColor/40 px-4 py-2 text-base font-normal placeholder:text-sm placeholder:font-light focus:border-2 focus:outline-none;
   }
 
   textarea {
-    @apply px-4 py-1 h-20 text-base font-normal border border-primaryColor/40 rounded-lg focus:outline-none placeholder:text-sm placeholder:font-light focus:border-2;
+    @apply h-20 rounded-lg border border-primaryColor/40 px-4 py-1 text-base font-normal placeholder:text-sm placeholder:font-light focus:border-2 focus:outline-none;
   }
 
   body {
@@ -95,7 +100,7 @@
 
 @layer components {
   .translate-ico {
-    @apply duration-500 transition-transform group-hover:translate-x-1;
+    @apply transition-transform duration-500 group-hover:translate-x-1;
   }
 }
 /* 

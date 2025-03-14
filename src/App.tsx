@@ -20,6 +20,7 @@ import { PelayananPage } from "./pages/pelayanan-page";
 import { KeuanganPage } from "./pages/keuangan-page";
 import BeritaDetailpage from "./pages/berita-detail-page";
 import { TulisanDetailPage } from "./pages/tulisan-detail";
+import { UMKMpage } from "./pages/umkm-page";
 
 function ScrollToTop() {
   const location = useLocation();
@@ -60,6 +61,7 @@ function App() {
         <Route path="/tulisan/:slug" element={<TulisanDetailPage />} />
         <Route path="/keuangan" element={<KeuanganPage />} />
         <Route path="/pelayanan" element={<PelayananPage />} />
+        <Route path="/umkm" element={<UMKMpage />} />
         <Route path="/silsilah" element={<SilsilahPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

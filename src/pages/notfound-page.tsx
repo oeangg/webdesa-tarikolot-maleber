@@ -1,7 +1,7 @@
 export function NotFoundPage() {
   return (
-    <div className="py-20 max-w-6xl mx-auto text-highlightColor text-xl font-medium">
-      Page not Found
+    <div className="mx-auto max-w-6xl py-20 text-base font-medium">
+      Page not Found, Coming soon..
     </div>
   );
 }

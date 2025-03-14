@@ -1,5 +1,5 @@
 import { listBerita } from "../../../data/berita";
-import { CardBerita } from "../../ui/card";
+import { CardArticle } from "../../ui/card";
 import { FormCari } from "../../ui/search";
 import { SubTitle } from "../../ui/sub-tittle";
 import { categories } from "../../../data/category";
@@ -44,7 +44,7 @@ export const BeritaIndex = () => {
           return prevParams;
         });
       }
-    }, 100)
+    }, 100),
   );
 
   const handleSearch = useCallback((term: string) => {
@@ -61,7 +61,7 @@ export const BeritaIndex = () => {
     let filtered = listBerita;
     if (activeCategory) {
       filtered = filtered.filter(
-        (berita) => berita.category === activeCategory
+        (berita) => berita.category === activeCategory,
       );
     }
 
@@ -71,7 +71,7 @@ export const BeritaIndex = () => {
       filtered = filtered.filter((berita) =>
         berita.title
           .toLocaleLowerCase()
-          .includes(searchParam.toLocaleLowerCase())
+          .includes(searchParam.toLocaleLowerCase()),
       );
     }
 
@@ -79,7 +79,7 @@ export const BeritaIndex = () => {
   }, [activeCategory, searchParams]);
 
   return (
-    <div className="max-w-6xl mx-auto w-full py-20">
+    <div className="mx-auto w-full max-w-6xl py-20">
       <SubTitle margin="center" title="Berita dari Kampung" />
 
       <FormCari
@@ -87,11 +87,16 @@ export const BeritaIndex = () => {
         value={search}
         onChange={handleSearchChange}
       />
-      <div className="flex flex-col-reverse md:flex-row gap-10">
-        <div className="basis-3/4 flex flex-col gap-5  ">
+      <div className="flex flex-col-reverse gap-10 md:flex-row">
+        <div className="flex basis-3/4 flex-col gap-5">
           {filteredBerita.length > 0 ? (
             filteredBerita.map((berita, index) => (
-              <CardBerita key={berita.id} {...berita} index={index} />
+              <CardArticle
+                key={berita.id}
+                {...berita}
+                index={index}
+                type="berita"
+              />
             ))
           ) : (
             <p className="text-base font-normal text-red-500">
@@ -99,11 +104,11 @@ export const BeritaIndex = () => {
             </p>
           )}
         </div>
-        <div className="basis-1/4 mx-4 md:mx-0 ">
-          <h3 className=" text-base font-medium mb-5 text-primaryColor">
+        <div className="mx-4 basis-1/4 md:mx-0">
+          <h3 className="mb-5 text-base font-medium text-primaryColor">
             Cari berdasarkan category
           </h3>
-          <div className="w-full flex flex-wrap gap-2 ">
+          <div className="flex w-full flex-wrap gap-2">
             {categories.map((category, index) => (
               <SearchCategory
                 key={index}

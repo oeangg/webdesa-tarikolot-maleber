@@ -22,9 +22,10 @@ type PropsTypePengurus = {
   katakata?: string;
 };
 
-type PropsTypeTulisan = {
+interface PropsArticle {
   date: string;
   title: string;
+  type: "berita" | "tulisan";
   slug: string;
   cover: string;
   content_p1: string;
@@ -33,23 +34,20 @@ type PropsTypeTulisan = {
   author: string;
   category: string;
   index: number;
-};
+}
 
 export const CardStatistikPenduduk = (props: PropsType) => {
   const { image, jenis, jumlah } = props;
 
   return (
-    <div
-      className="flex flex-row border-[3px] border-secondaryColor/80  bg-hoverColor p-10 shadow-lg shadow-secondaryColor/40 items-center justify-between gap-2 px-8 text-center duration-300 rounded-xl  hover:border-highlightColor/60 hover:shadow-xl  hover:shadow-hoverColor/30
-    "
-    >
+    <div className="flex flex-col items-center justify-between gap-2 rounded-xl border border-secondaryColor/80 bg-gradient-to-t from-hoverColor to-hoverColor/50 p-10 text-center shadow-lg shadow-secondaryColor/40 duration-300 hover:border-highlightColor/60 hover:shadow-xl hover:shadow-hoverColor/30 md:flex-row">
       {image === "warga" && <img src={imgWarga} alt="warga" />}
       {image === "man" && <img src={imgMan} alt="lakilaki" />}
       {image === "woman" && <img src={imgWoman} alt="perempuan" />}
       {image === "family" && <img src={imgFamily} alt="keluarga" />}
-      <div className="flex flex-col justify-start text-primaryColor/90  text-left  gap-2">
+      <div className="flex flex-col justify-start text-primaryColor/90 md:gap-2 md:text-left">
         <Counter number={jumlah} />
-        <p className="text-base md:text-lg font-medium tracking-tight">
+        <p className="text-base font-medium tracking-tight md:text-lg">
           {jenis}
         </p>
       </div>
@@ -66,18 +64,18 @@ export const CardProfilPengurus = ({
   return (
     <NavLink
       to={`/profil/perangkatdusun/${slug}`}
-      className="group w-44 h-56 border p-2 border-borderPrimary duration-300 overflow-hidden  hover:shadow-md"
+      className="group h-56 w-44 overflow-hidden border border-borderPrimary p-2 duration-300 hover:shadow-md"
     >
-      <div className="h-40  relative overflow-hidden   bg-slate-200 mb-1   ">
+      <div className="relative mb-1 h-40 overflow-hidden bg-slate-200">
         <img
           src={photo}
           alt="image kadus"
           style={{ objectFit: "fill" }}
-          className="duration-300 group-hover:scale-110 "
+          className="duration-300 group-hover:scale-110"
         />
       </div>
-      <div className="flex flex-col p-1 -space-y-0.5 justify-center  items-center text-sm font-light">
-        <h3 className=" tracking-tighter">{nama}</h3>
+      <div className="flex flex-col items-center justify-center -space-y-0.5 p-1 text-sm font-light">
+        <h3 className="tracking-tighter">{nama}</h3>
         <p className="font-medium tracking-tight">{jabatan}</p>
       </div>
     </NavLink>
@@ -91,8 +89,8 @@ export const CardProfilPengurusDetail = ({
   katakata,
 }: PropsTypePengurus) => {
   return (
-    <div className="grid grid-cols-3 gap-10">
-      <div className="flex justify-center items-center ">
+    <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
+      <div className="flex max-w-xs items-center justify-center">
         <img
           src={photo}
           alt={`photo ${jabatan}`}
@@ -111,7 +109,7 @@ export const CardProfilPengurusDetail = ({
   );
 };
 
-export const CardTulisan = ({
+export const CardArticle = ({
   author,
   content_p1,
   category,
@@ -120,13 +118,14 @@ export const CardTulisan = ({
   slug,
   title,
   index,
-}: PropsTypeTulisan) => {
+  type,
+}: PropsArticle) => {
   return (
-    <div className="group grid-cols-1  grid  rounded-md md:grid-cols-3 p-6 gap-8 border-b border-borderPrimary/80 ">
+    <div className="group grid grid-cols-1 gap-8 rounded-md border-b border-borderPrimary/80 p-6 md:grid-cols-3">
       <div
         className={cn(
-          "w-full h-52 overflow-hidden",
-          index % 2 === 0 ? "order-1" : "order-2"
+          "h-52 w-full overflow-hidden",
+          index % 2 === 0 ? "order-1" : "order-2",
         )}
       >
         <img
@@ -138,31 +137,35 @@ export const CardTulisan = ({
       </div>
       <div
         className={cn(
-          "space-y-3 col-span-2",
-          index % 2 === 0 ? "order-2" : "order-1"
+          "col-span-2 space-y-4",
+          index % 2 === 0 ? "order-2" : "order-1",
         )}
       >
         <div className="space-y-1">
-          <p className="text-primaryColor/90 tracking-tight text-base font-normal">
+          <p className="text-sm font-normal tracking-tight text-primaryColor/90">
             {date}
           </p>
-          <div className="flex flex-row gap-2">
-            <p className="px-2 py-1 text-center w-fit font-light border border-secondaryColor text-xs bg-backgroundSecondary rounded-md ">
+          <div className="flex flex-row gap-2 text-primaryColor/80">
+            <p className="w-fit rounded-md border border-secondaryColor bg-backgroundSecondary px-2 py-1 text-center text-xs font-light">
               {author}
             </p>
-            <p className="px-2 py-1 text-center w-fit font-light text-xs border border-secondaryColor  rounded-md ">
+            <p className="w-fit rounded-md border border-secondaryColor px-2 py-1 text-center text-xs font-light">
               {category}
             </p>
           </div>
         </div>
-        <h1 className="text-base md:text-lg lg:text-xl text-primaryColor/90 font-semibold line-clamp-2 tracking-tight ">
+        <h1 className="line-clamp-2 text-base font-semibold tracking-tight text-primaryColor/90 md:text-lg lg:text-xl">
           {title}
         </h1>
-        <p className="line-clamp-3 leading-4 text-base font-light">
+        <p className="line-clamp-3 text-sm font-light leading-4">
           {content_p1}
         </p>
-        <div className="space-y-2 w-full">
-          <LinkButton href={`/tulisan/${slug}`} theme="border" size="sm">
+        <div className="w-full space-y-2">
+          <LinkButton
+            href={type === "tulisan" ? `/tulisan/${slug}` : `/berita/${slug}`}
+            theme="border"
+            size="sm"
+          >
             Selengkapnya
             <MdKeyboardDoubleArrowRight size={18} className="translate-ico" />
           </LinkButton>
@@ -172,63 +175,67 @@ export const CardTulisan = ({
   );
 };
 
-export const CardBerita = ({
-  author,
-  content_p1,
-  category,
+export const CardArticleHome = ({
   cover,
-  date,
-  slug,
+  author,
   title,
-  index,
-}: PropsTypeTulisan) => {
+  content_p1,
+  slug,
+  category,
+}: PropsArticle) => {
+  const month = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "Mei",
+    "Jun",
+    "Jul",
+    "Ags",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Des",
+  ];
+  const date = new Date();
+
   return (
-    <div className="group grid-cols-1 grid  rounded-md md:grid-cols-3 p-6 gap-8 border-b border-borderPrimary/80">
-      <div
-        className={cn(
-          "w-full h-52 overflow-hidden",
-          index % 2 === 0 ? "order-1" : "order-2"
-        )}
-      >
+    <NavLink
+      to={`/berita/${slug}`}
+      className="group relative h-80 min-w-[260px] overflow-hidden rounded-md border border-borderPrimary/80 shadow-md shadow-backgroundSecondary/80 hover:border-primaryColor"
+    >
+      <div className="absolute right-4 top-4 flex h-12 w-12 flex-col items-center justify-center rounded-full bg-red-400 p-3 text-center text-hoverColor">
+        <div className="-space-y-1">
+          <p className="text-sm font-semibold">
+            {String(new Date().getDay()).padStart(2, "0")}
+          </p>
+          <p className="text-xs font-medium">{month[date.getMonth()]}</p>
+        </div>
+      </div>
+
+      <div className="h-[150px] w-full min-w-[260px]">
         <img
           src={cover}
           alt="image cover"
           style={{ height: "100%", width: "100%", objectFit: "cover" }}
-          className="duration-300 group-hover:scale-105"
         />
       </div>
-      <div
-        className={cn(
-          "space-y-3 col-span-2",
-          index % 2 === 0 ? "order-2" : "order-1"
-        )}
-      >
-        <div className="space-y-1">
-          <p className="text-primaryColor/90 tracking-tight text-base font-normal">
-            {date}
-          </p>
-          <div className="flex flex-row gap-2">
-            <p className="px-2 py-1 text-center w-fit font-light text-xs bg-backgroundSecondary border border-secondaryColor rounded-md ">
-              {author}
-            </p>
-            <p className="px-2 py-1 text-center w-fit font-light text-xs border border-secondaryColor rounded-md ">
-              {category}
-            </p>
-          </div>
-        </div>
-        <h1 className="text-base md:text-lg lg:text-xl font-semibold text-primaryColor/90  line-clamp-2 tracking-tight ">
+      <div className="space-y-3 px-4 py-2">
+        <p className="line-clamp-2 text-base font-semibold tracking-tight text-primaryColor/90 md:text-lg lg:text-xl">
           {title}
-        </h1>
-        <p className="line-clamp-3 leading-4 text-base font-light">
+        </p>
+        <p className="line-clamp-2 text-sm font-light tracking-wide text-primaryColor/80">
           {content_p1}
         </p>
-        <div className="space-y-2 w-full">
-          <LinkButton href={`/berita/${slug}`} theme="border" size="sm">
-            Selengkapnya
-            <MdKeyboardDoubleArrowRight size={18} className="translate-ico" />
-          </LinkButton>
-        </div>
       </div>
-    </div>
+      <div className="flex flex-row gap-2 px-4">
+        <p className="w-fit rounded-md border border-secondaryColor bg-backgroundSecondary px-2 py-1 text-center text-xs font-light">
+          {author}
+        </p>
+        <p className="w-fit rounded-md border border-secondaryColor px-2 py-1 text-center text-xs font-light">
+          {category}
+        </p>
+      </div>
+    </NavLink>
   );
 };

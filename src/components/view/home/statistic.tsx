@@ -5,14 +5,14 @@ import { CardStatistikPenduduk } from "../../ui/card";
 
 export const StatisticPenduduk = () => {
   return (
-    <div className="  w-full ">
-      <div className="mx-auto py-10 px-4 md:px-0 max-w-6xl flex flex-col ">
+    <div className="w-full">
+      <div className="mx-auto flex max-w-6xl flex-col px-4 py-10 md:px-0">
         <SubTitle
           subtitle="Statistik "
           title="Jumlah penduduk "
           margin="left"
         />
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+        <div className="grid grid-cols-2 gap-5 md:grid-cols-4">
           {lissStatistikPenduduk.map((st, index) => (
             <CardStatistikPenduduk
               key={index}

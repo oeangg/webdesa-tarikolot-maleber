@@ -22,17 +22,17 @@ export const SubTitle = ({ subtitle, title, margin }: PropsType) => {
         }
       >
         {subtitle && (
-          <h1 className="text-sm md:text-base  font-light tracking-widest uppercase text-highlightColor">
+          <h1 className="text-sm md:text-base  font-normal tracking-widest uppercase text-highlightColor">
             {subtitle}
           </h1>
         )}
-        <p
+        <h2
           className={
             "text-4xl lg:text-5xl font-extrabold tracking-tight text-primaryColor font-Inter "
           }
         >
           {title}
-        </p>
+        </h2>
       </div>
       <div
         className={cn(

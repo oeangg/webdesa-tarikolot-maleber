@@ -14,16 +14,16 @@ export const HeroSection = () => {
   return (
     <div className="relative w-full h-screenMinusNav ">
       <Carousel images={images} />
-      <div className="w-2/3 absolute text-center md:space-y-4 left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2  text-white  ">
-        <h1 className="font-black text-3xl md:text-5xl lg:text-7xl font-Inter">
+      <div className="w-2/3 absolute text-center md:space-y-5 left-1/2 top-1/2 space-y-3 -translate-y-1/2 -translate-x-1/2  text-white  ">
+        <p className="font-black text-4xl md:text-5xl lg:text-7xl font-Inter">
           Wilujeung Sumping
-        </h1>
-        <h3 className="text-2xl md:text-4xl lg:text-6xl font-Inter">
+        </p>
+        <p className="text-2xl md:text-4xl lg:text-6xl font-Inter">
           di Tarikolot Maleber
-        </h3>
-        <div className="text-base md:text-lg font-normal lg:text-xl">
-          <h3>Dusun VI tarikolot Desa Maleber Kecamatan Maleber</h3>
-          <h3>Kabupaten Kuningan, Jawa Barat</h3>
+        </p>
+        <div className="text-base md:text-lg  font-normal lg:text-xl">
+          <p>Dusun VI tarikolot Desa Maleber Kecamatan Maleber</p>
+          <p>Kabupaten Kuningan, Jawa Barat</p>
         </div>
 
         <div className="flex justify-center">

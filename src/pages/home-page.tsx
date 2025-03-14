@@ -10,7 +10,7 @@ import { TulisanTerbaru } from "../components/view/home/tulisan";
 
 export function Homepage() {
   return (
-    <div className="w-full flex flex-col gap-20 mb-20">
+    <main className="w-full flex flex-col gap-20 mb-20">
       <HeroSection />
       <SambutanKadus />
       <Banner />
@@ -18,6 +18,6 @@ export function Homepage() {
       <StatisticPenduduk />
       <GalleryImage />
       <TulisanTerbaru />
-    </div>
+    </main>
   );
 }
