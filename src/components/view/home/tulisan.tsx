@@ -16,8 +16,7 @@ export const TulisanTerbaru = () => {
       </div>
       <div className="flex items-center justify-center">
         <LinkButton href="/tulisan" size="md" theme="bg">
-          {" "}
-          Tulisan lainnya{" "}
+          Lihat semua tulisan
           <MdKeyboardDoubleArrowRight size={18} className="translate-ico" />
         </LinkButton>
       </div>

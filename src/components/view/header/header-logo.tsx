@@ -5,19 +5,17 @@ export const HeaderLogo = () => {
   return (
     <NavLink
       to="/"
-      className="group flex flex-row items-center gap-3 text-primaryColor"
+      className="flex flex-row items-center gap-2 text-primaryColor"
     >
       {/* <RiHomeSmileFill size={46} /> */}
       <img
         src={imgHeader}
         alt="icon header"
-        style={{ height: "45px", width: "auto" }}
+        style={{ height: "28px", width: "auto" }}
       />
-      <div className="md: flex flex-col -space-y-1 font-Inter text-sm font-bold text-backgroundColor/80 sm:text-base md:-space-y-2 md:text-lg">
+      <div className="flex flex-col -space-y-1.5 font-Inter text-sm font-bold text-primaryColor/70">
         <span className="tracking-normal">Dusun VI Tarikolot</span>
-        <span className="uppercase tracking-widest text-hoverColor/80">
-          Desa Maleber
-        </span>
+        <span className="uppercase tracking-widest">Desa Maleber</span>
       </div>
     </NavLink>
   );

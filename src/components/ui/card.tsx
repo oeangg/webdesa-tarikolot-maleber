@@ -154,7 +154,7 @@ export const CardArticle = ({
             </p>
           </div>
         </div>
-        <h1 className="line-clamp-2 text-base font-semibold tracking-tight text-primaryColor/90 md:text-lg lg:text-xl">
+        <h1 className="line-clamp-2 text-base font-semibold tracking-tight text-primaryColor/90 md:text-lg">
           {title}
         </h1>
         <p className="line-clamp-3 text-sm font-light leading-4">
@@ -202,7 +202,7 @@ export const CardArticleHome = ({
   return (
     <NavLink
       to={`/berita/${slug}`}
-      className="group relative h-80 min-w-[260px] overflow-hidden rounded-md border border-borderPrimary/80 shadow-md shadow-backgroundSecondary/80 hover:border-primaryColor"
+      className="group relative h-80 min-w-[260px] overflow-hidden rounded-md shadow-md shadow-backgroundSecondary/80 hover:border hover:border-borderPrimary"
     >
       <div className="absolute right-4 top-4 flex h-12 w-12 flex-col items-center justify-center rounded-full bg-red-400 p-3 text-center text-hoverColor">
         <div className="-space-y-1">
@@ -221,7 +221,7 @@ export const CardArticleHome = ({
         />
       </div>
       <div className="space-y-3 px-4 py-2">
-        <p className="line-clamp-2 text-base font-semibold tracking-tight text-primaryColor/90 md:text-lg lg:text-xl">
+        <p className="line-clamp-2 text-base font-semibold tracking-tight text-primaryColor/90 md:text-lg">
           {title}
         </p>
         <p className="line-clamp-2 text-sm font-light tracking-wide text-primaryColor/80">

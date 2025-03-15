@@ -21,8 +21,9 @@ export function GetTime() {
     "Kamis",
     "Jum'at",
     "Sabtu",
-    "Ahad",
+    "Minggu",
   ];
+
   const date = new Date();
   const minute = String(date.getMinutes()).padStart(2, "0");
   const hour = String(date.getHours()).padStart(2, "0");
@@ -31,6 +32,19 @@ export function GetTime() {
   const month = date.getMonth();
   const year = date.getFullYear();
 
-  const result = `${arrDay[day]}, ${sdate} ${arrMonth[month]} ${year} ${hour}:${minute}`;
-  return result;
+  function Gretting() {
+    const shour = date.getHours();
+    if (shour <= 10) {
+      return "Wilujeung enjing Lur!";
+    } else if (shour <= 14) {
+      return "Wilujeung siang Lur!";
+    } else if (shour <= 17) {
+      return "Wilujeung sonten Lur!";
+    } else {
+      return "Wilujeung weungi Lur!";
+    }
+  }
+  const thisGretting = Gretting();
+  const thisDay = `${arrDay[day - 1]},  ${sdate} ${arrMonth[month]} ${year} ${hour}:${minute}`;
+  return { thisDay, thisGretting };
 }

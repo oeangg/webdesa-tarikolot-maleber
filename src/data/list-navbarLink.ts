@@ -1,55 +1,51 @@
 export const listNavbarLink = [
   {
     id: 1,
-    text: "Home",
-    href: "/",
-    submenu: [],
-  },
-  {
-    id: 2,
     text: "Profil",
-    href: "/profil",
+    href: "",
     submenu: [
-      { text: "Profil Kampung", href: "/profil" },
+      { text: "Informasi Dusun", href: "/profil" },
       { text: "Visi misi", href: "/visimisi" },
       { text: "Sejarah", href: "/sejarah" },
+      { text: "Silsilah Leumbur", href: "/silsilah" },
       { text: "Sambutan Kepala Dusun", href: "/sambutankadus" },
       { text: "Profil Perangkat Dusun", href: "/perangkatdusun" },
     ],
   },
   {
-    id: 3,
+    id: 2,
     text: "Berita",
     href: "/berita",
     submenu: [],
   },
   {
-    id: 4,
+    id: 3,
     text: "Tulisan",
     href: "/tulisan",
     submenu: [],
   },
+
   {
-    id: 5,
+    id: 4,
     text: "Keuangan",
     href: "/keuangan",
     submenu: [],
   },
   {
-    id: 6,
+    id: 5,
     text: "Pelayanan",
-    href: "/pelayanan",
+    href: "/layanan",
     submenu: [],
   },
   {
-    id: 7,
+    id: 6,
     text: "UMKM",
     href: "/umkm",
     submenu: [],
   },
 
   {
-    id: 8,
+    id: 7,
     text: "HPTM",
     href: "/hptm",
     submenu: [
@@ -59,16 +55,11 @@ export const listNavbarLink = [
       { text: "Laporan Kas", href: "/hptm/laporan" },
     ],
   },
+
   {
-    id: 9,
-    text: "Silsilah",
-    href: "/silsilah",
-    submenu: [],
-  },
-  {
-    id: 10,
-    text: "Kontak",
-    href: "/contact",
+    id: 8,
+    text: "Tentang Kami",
+    href: "/tentangkami",
     submenu: [],
   },
 ];

@@ -21,6 +21,8 @@ import { KeuanganPage } from "./pages/keuangan-page";
 import BeritaDetailpage from "./pages/berita-detail-page";
 import { TulisanDetailPage } from "./pages/tulisan-detail";
 import { UMKMpage } from "./pages/umkm-page";
+import { CtaSide_index } from "./components/view/cta-aspirasi/cta-index";
+import { FormAspirasiPage } from "./pages/form-aspirasi-page";
 
 function ScrollToTop() {
   const location = useLocation();
@@ -40,11 +42,13 @@ function App() {
     <>
       <ScrollToTop />
       <HeaderPage />
+      <CtaSide_index />
       <Routes>
         <Route element={<ProfilLayout />}>
           <Route path="/profil" element={<ProfilPage />} />
           <Route path="/visimisi" element={<VisiMisi />} />
           <Route path="/sejarah" element={<SejarahPage />} />
+          <Route path="/silsilah" element={<SilsilahPage />} />
           <Route path="/sambutankadus" element={<SambutanPage />} />
           <Route path="/perangkatdusun" element={<PerangkatPage />} />
           <Route
@@ -54,15 +58,15 @@ function App() {
         </Route>
 
         <Route path="/" element={<Homepage />} />
-        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/tentangkami" element={<ContactPage />} />
         <Route path="/berita" element={<BeritaPage />} />
         <Route path="/berita/:slug" element={<BeritaDetailpage />} />
         <Route path="/tulisan" element={<TulisanPage />} />
         <Route path="/tulisan/:slug" element={<TulisanDetailPage />} />
         <Route path="/keuangan" element={<KeuanganPage />} />
-        <Route path="/pelayanan" element={<PelayananPage />} />
+        <Route path="/layanan" element={<PelayananPage />} />
+        <Route path="/aspirasi" element={<FormAspirasiPage />} />
         <Route path="/umkm" element={<UMKMpage />} />
-        <Route path="/silsilah" element={<SilsilahPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <FooterPage />

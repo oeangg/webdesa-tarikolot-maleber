@@ -10,25 +10,25 @@ export const SubTitle = ({ subtitle, title, margin }: PropsType) => {
   return (
     <div
       className={cn(
-        "flex flex-col  gap-10 mb-16",
-        margin === "center" ? "justify-center" : "justify-start"
+        "mb-16 flex flex-col gap-5",
+        margin === "center" ? "justify-center" : "justify-start",
       )}
     >
       <div
         className={
           margin === "center"
-            ? "flex flex-col justify-center text-center "
+            ? "flex flex-col justify-center text-center"
             : "text-left"
         }
       >
         {subtitle && (
-          <h1 className="text-sm md:text-base  font-normal tracking-widest uppercase text-highlightColor">
+          <h1 className="text-sm font-normal uppercase tracking-widest text-highlightColor">
             {subtitle}
           </h1>
         )}
         <h2
           className={
-            "text-4xl lg:text-5xl font-extrabold tracking-tight text-primaryColor font-Inter "
+            "font-Inter text-3xl font-extrabold tracking-tight text-primaryColor lg:text-4xl"
           }
         >
           {title}
@@ -36,14 +36,14 @@ export const SubTitle = ({ subtitle, title, margin }: PropsType) => {
       </div>
       <div
         className={cn(
-          "flex flex-row items-center  gap-2 ",
-          margin === "center" ? "justify-center" : "justify-start"
+          "flex flex-row items-center gap-2",
+          margin === "center" ? "justify-center" : "justify-start",
         )}
       >
-        <span className="w-4 h-4 bg-highlightColor rounded-full"></span>
-        <span className="w-4 h-4 bg-primaryColor rounded-full"></span>
-        <span className="w-4 h-4 bg-secondaryColor rounded-full"></span>
-        <span className="w-4 h-4 bg-hoverColor rounded-full"></span>
+        <span className="h-4 w-4 rounded-full bg-highlightColor"></span>
+        <span className="h-4 w-4 rounded-full bg-primaryColor"></span>
+        <span className="h-4 w-4 rounded-full bg-secondaryColor"></span>
+        <span className="h-4 w-4 rounded-full bg-hoverColor"></span>
       </div>
     </div>
   );

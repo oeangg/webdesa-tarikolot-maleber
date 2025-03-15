@@ -113,7 +113,7 @@ export const GalleryImage = () => {
                 src={image.src}
                 alt={image.alt}
                 style={{ objectFit: "cover", width: "auto", height: "100%" }}
-                className="cursor-pointer duration-500 hover:scale-105 hover:opacity-90"
+                className="cursor-pointer opacity-60 duration-500 hover:scale-105 hover:opacity-100"
                 onClick={() => handleOpenModal(index)}
               />
             </div>

@@ -5,14 +5,16 @@ import { ProfilSideBarLayout } from "./profil-sidebar";
 export const ProfilLayout = () => {
   return (
     <div className="w-full">
-      <div className="w-full">
+      <div className="relative max-h-60 w-full">
         <img
           src={imgHeader}
           alt="image header"
-          style={{ height: 220, width: "100%", objectFit: "cover" }}
+          style={{ height: "auto", width: "100%", objectFit: "cover" }}
+          className="max-h-60"
         />
+        <div className="opacity-670 absolute inset-0 bg-gradient-to-tr from-black to-transparent"></div>
       </div>
-      <div className="grid max-w-6xl px-4 md:px-0 mx-auto w-full md:grid-cols-4 gap-10 ">
+      <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 md:grid-cols-4 md:px-0">
         <div className="col-span-3 py-10">
           <Outlet />
         </div>

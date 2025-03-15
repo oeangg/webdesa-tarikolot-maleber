@@ -28,7 +28,7 @@ export const BeritaTerbaru = () => {
       <div className="flex w-full items-center justify-start sm:justify-center md:justify-end">
         <LinkButton href="/berita" size="md" theme="bg">
           {" "}
-          Berita lainnya{" "}
+          Lihat semua berita
           <MdKeyboardDoubleArrowRight size={18} className="translate-ico" />
         </LinkButton>
       </div>

@@ -1,8 +1,9 @@
-import { FaPhone } from "react-icons/fa6";
-import { HeaderLogo } from "./header-logo";
+import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa6";
+// import { HeaderLogo } from "./header-logo";
 import { GetTime } from "../../../tools/time";
 import { cn } from "../../../lib/utils";
 import { NavLink } from "react-router";
+import { AiOutlineTikTok } from "react-icons/ai";
 
 type PropsType = {
   header: boolean;
@@ -10,27 +11,41 @@ type PropsType = {
 
 export const HeaderInfo = ({ header }: PropsType) => {
   return (
-    <div className={cn("w-full px-4 lg:px-0", header ? "py-2" : "py-6")}>
+    <div className={cn("w-full px-4 lg:px-0", header ? "py-2" : "py-4")}>
       <div className="mx-auto flex w-full max-w-6xl flex-row items-center justify-between gap-4">
-        <HeaderLogo />
-
-        <div className="hidden w-1/3 text-right text-xs font-light text-secondaryColor md:flex md:justify-center md:text-center md:text-sm md:font-semibold">
-          <p className="leading-4 md:px-10 md:uppercase lg:leading-5 lg:tracking-wide">
-            {/* Selamat Menunaikan Ibadah Puasa Ramadhan 1446 H */}
-            {GetTime()}
+        <div className="-space-y-1 text-backgroundColor md:-space-y-1.5">
+          <p className="text-xs font-light tracking-tight md:text-sm">
+            {GetTime().thisDay}
+          </p>
+          <p className="font-Inter text-sm font-semibold tracking-wide text-hoverColor md:text-lg lg:text-xl">
+            {GetTime().thisGretting}
           </p>
         </div>
 
-        <div className="">
+        <div className="flex flex-row gap-2 text-backgroundSecondary/70 md:gap-3">
           <NavLink
-            to="/contact"
-            className="group flex items-center justify-center gap-1 rounded-full border border-primaryColor bg-hoverColor px-4 py-[6px] text-xs font-medium text-primaryColor duration-300 hover:border-hoverColor hover:bg-primaryColor hover:text-hoverColor md:text-sm"
+            to="https://www.facebook.com/"
+            className="flex h-7 w-7 items-center justify-center rounded-sm border border-backgroundSecondary/70 p-1 transition-all duration-300 ease-in-out hover:border-hoverColor hover:text-hoverColor"
           >
-            <FaPhone
-              size={22}
-              className="h-8 w-8 rounded-full border-2 border-primaryColor/90 p-1 text-primaryColor group-hover:border-hoverColor group-hover:text-hoverColor"
-            />{" "}
-            Layanan 25 Jam
+            <FaFacebookF size={18} />
+          </NavLink>
+          <NavLink
+            to="https://www.instagram.com/"
+            className="flex h-7 w-7 items-center justify-center rounded-sm border border-backgroundSecondary/70 p-1 transition-all duration-300 ease-in-out hover:border-hoverColor hover:text-hoverColor"
+          >
+            <FaInstagram size={18} />
+          </NavLink>
+          <NavLink
+            to="https://www.tiktok.com/"
+            className="flex h-7 w-7 items-center justify-center rounded-sm border border-backgroundSecondary/70 p-1 transition-all duration-300 ease-in-out hover:border-hoverColor hover:text-hoverColor"
+          >
+            <AiOutlineTikTok size={18} />
+          </NavLink>
+          <NavLink
+            to="https://www.youtube.com/"
+            className="flex h-7 w-7 items-center justify-center rounded-sm border border-backgroundSecondary/70 p-1 transition-all duration-300 ease-in-out hover:border-hoverColor hover:text-hoverColor"
+          >
+            <FaYoutube size={18} />
           </NavLink>
         </div>
       </div>

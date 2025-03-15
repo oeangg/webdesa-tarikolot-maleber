@@ -4,8 +4,8 @@ import { FooterRight } from "./footer-right";
 
 export const FooterPage = () => {
   return (
-    <div className="flex flex-col bg-gradient-to-r to-blue-300  from-secondaryColor ">
-      <div className="px-5 md:px-20 py-20 flex flex-col md:flex-row gap-5 justify-between ">
+    <div className="flex flex-col bg-gradient-to-r from-highlightColor/70 to-primaryColor">
+      <div className="flex flex-col justify-between gap-5 px-5 py-20 md:flex-row md:px-20">
         <FooterLeft />
         <FooterRight />
       </div>

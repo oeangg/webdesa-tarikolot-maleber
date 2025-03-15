@@ -1,4 +1,4 @@
-import { ContactIndex } from "../components/view/contact/contact-index";
+import { ContactIndex } from "../components/view/tentangkami/contact-index";
 
 export function ContactPage() {
   return <ContactIndex />;
