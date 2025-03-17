@@ -27,52 +27,52 @@ export const HeroSection = () => {
         <div className="mx-auto grid w-2/3 grid-cols-2 items-center justify-items-center gap-5 md:grid-cols-4 lg:w-3/5">
           <NavLink
             to="/profil"
-            className="group relative flex h-28 max-w-28 flex-col items-center justify-center overflow-hidden rounded-xl bg-backgroundColor font-Inter text-lg font-semibold tracking-tight text-primaryColor/70 duration-300 ease-in-out hover:text-primaryColor hover:shadow-lg hover:shadow-backgroundColor/70"
+            className="group relative flex h-24 w-24 flex-col items-center justify-center overflow-hidden rounded-xl bg-backgroundColor font-Inter text-lg font-semibold tracking-tight text-primaryColor/70 duration-300 ease-in-out hover:text-primaryColor hover:shadow-md hover:shadow-backgroundColor/70"
           >
             <img
               src={imgCTAProfil}
               alt="image cta profil"
-              className="max-w-28 px-6 pt-3"
+              className="max-w-20 px-4 pt-2"
             />
             Profil
-            <div className="absolute inset-0 bg-gradient-to-b from-red-500 to-primaryColor opacity-40 duration-300 group-hover:opacity-30"></div>
+            <div className="absolute inset-0 bg-hoverColor/80 opacity-50 duration-300 group-hover:opacity-30"></div>
           </NavLink>
           <NavLink
             to="/hptm"
-            className="group relative flex h-28 max-w-28 flex-col items-center justify-center overflow-hidden rounded-xl bg-backgroundColor font-Inter text-sm font-semibold tracking-tighter text-primaryColor/70 duration-300 ease-in-out hover:text-primaryColor hover:shadow-lg hover:shadow-backgroundColor/70"
+            className="group relative flex h-24 w-24 flex-col items-center justify-center overflow-hidden rounded-xl bg-backgroundColor font-Inter text-sm font-semibold tracking-tighter text-primaryColor/70 duration-300 ease-in-out hover:text-primaryColor hover:shadow-md hover:shadow-backgroundColor/70"
           >
             <img
               src={imgCTAHTPM}
               alt="image cta profil"
-              className="max-w-28 px-6 pt-3"
+              className="max-w-20 px-4 pt-2"
             />
             Karang Taruna
-            <div className="absolute inset-0 bg-gradient-to-t from-red-500 to-primaryColor opacity-40 group-hover:opacity-30"></div>
+            <div className="absolute inset-0 bg-highlightColor/80 opacity-50 group-hover:opacity-30"></div>
           </NavLink>
           <NavLink
             to="/umkm"
-            className="group relative flex h-28 max-w-28 flex-col items-center justify-center overflow-hidden rounded-xl bg-backgroundColor font-Inter text-base font-bold tracking-tighter text-primaryColor/70 duration-300 ease-in-out hover:text-primaryColor hover:shadow-lg hover:shadow-backgroundColor/70"
+            className="group relative flex h-24 w-24 flex-col items-center justify-center overflow-hidden rounded-xl bg-backgroundColor font-Inter text-base font-bold tracking-tighter text-primaryColor/70 duration-300 ease-in-out hover:text-primaryColor hover:shadow-md hover:shadow-backgroundColor/70"
           >
             <img
               src={imgCTAUMKM}
               alt="image cta profil"
-              className="max-w-28 px-6 pt-3"
+              className="max-w-20 px-4 pt-2"
             />
             U M K M
-            <div className="absolute inset-0 bg-gradient-to-t from-red-500 to-primaryColor opacity-50 group-hover:opacity-30"></div>
+            <div className="absolute inset-0 bg-highlightColor/80 opacity-50 group-hover:opacity-30"></div>
           </NavLink>
 
           <NavLink
             to="/silsilah"
-            className="group relative flex h-28 max-w-28 flex-col items-center justify-center overflow-hidden rounded-xl bg-backgroundColor font-Inter text-base font-bold tracking-tight text-primaryColor/70 duration-300 ease-in-out hover:text-primaryColor hover:shadow-lg hover:shadow-backgroundColor/70"
+            className="group relative flex h-24 w-24 flex-col items-center justify-center overflow-hidden rounded-xl bg-backgroundColor font-Inter text-base font-bold tracking-tight text-primaryColor/70 duration-300 ease-in-out hover:text-primaryColor hover:shadow-md hover:shadow-backgroundColor/70"
           >
             <img
               src={imgCTAsilsilah}
               alt="image cta profil"
-              className="max-w-28 px-6 pt-3"
+              className="max-w-20 px-4 pt-2"
             />
             Silsilah
-            <div className="absolute inset-0 bg-gradient-to-b from-red-500 to-primaryColor opacity-50 group-hover:opacity-30"></div>
+            <div className="absolute inset-0 bg-hoverColor/80 opacity-50 group-hover:opacity-30"></div>
           </NavLink>
         </div>
       </div>

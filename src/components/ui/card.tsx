@@ -157,7 +157,7 @@ export const CardArticle = ({
         <h1 className="line-clamp-2 text-base font-semibold tracking-tight text-primaryColor/90 md:text-lg">
           {title}
         </h1>
-        <p className="line-clamp-3 text-sm font-light leading-4">
+        <p className="line-clamp-3 text-sm font-light leading-4 text-foregroundPrimary/80">
           {content_p1}
         </p>
         <div className="w-full space-y-2">
@@ -224,7 +224,7 @@ export const CardArticleHome = ({
         <p className="line-clamp-2 text-base font-semibold tracking-tight text-primaryColor/90 md:text-lg">
           {title}
         </p>
-        <p className="line-clamp-2 text-sm font-light tracking-wide text-primaryColor/80">
+        <p className="line-clamp-2 text-sm font-light tracking-wide text-foregroundPrimary/80">
           {content_p1}
         </p>
       </div>
