@@ -9,7 +9,7 @@ export const FooterLeft = () => {
         <p className="font-Inter text-base font-bold tracking-tight text-backgroundSecondary/80 md:text-xl">
           Ti Lembur Balik Deui ka Lembur
         </p>
-        <div className="-space-y-1 pb-5 text-primaryColor">
+        <div className="-space-y-1 pb-5 text-backgroundSecondary/60">
           <p className="text-base font-light leading-5 md:w-2/3">
             Semoga website ini menjadi sarana informasi, aspirasi dan promosi
             warga Dusun VI Tarikolot, Desa Maleber, Kecamatan Maleber, Kuningan,

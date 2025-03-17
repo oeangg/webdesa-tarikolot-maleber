@@ -40,7 +40,7 @@ export const CardStatistikPenduduk = (props: PropsType) => {
   const { image, jenis, jumlah } = props;
 
   return (
-    <div className="flex flex-col items-center justify-between gap-2 rounded-xl border border-secondaryColor/80 bg-gradient-to-t from-hoverColor to-hoverColor/50 p-10 text-center shadow-lg shadow-secondaryColor/40 duration-300 hover:border-highlightColor/60 hover:shadow-xl hover:shadow-hoverColor/30 md:flex-row">
+    <div className="flex flex-col items-center justify-between gap-2 rounded-xl bg-gradient-to-t from-secondaryColor to-secondaryColor/20 p-10 text-center shadow-lg shadow-secondaryColor/40 duration-300 hover:border hover:border-highlightColor/60 md:flex-row">
       {image === "warga" && <img src={imgWarga} alt="warga" />}
       {image === "man" && <img src={imgMan} alt="lakilaki" />}
       {image === "woman" && <img src={imgWoman} alt="perempuan" />}

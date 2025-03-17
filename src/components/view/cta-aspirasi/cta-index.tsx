@@ -23,28 +23,32 @@ export const CtaSide_index = () => {
         onMouseEnter={() => setOpenToolTips(true)}
         onMouseLeave={() => setOpenToolTips(false)}
         className={cn(
-          "absolute right-2 top-1/2 z-[99] -translate-y-1/2 transform cursor-pointer rounded-full bg-highlightColor p-2 text-hoverColor transition-opacity duration-300",
-          openCto === false && "hidden opacity-0",
+          "absolute right-2 top-1/2 z-[99] -translate-y-1/2 transform cursor-pointer rounded-full bg-highlightColor p-2 text-hoverColor transition-transform duration-300",
+          openCto === false ? "translate-x-96" : "translate-x-0",
         )}
       />
       {/* tooltips */}
-      {openToolTips && (
-        <div className="absolute -top-12 right-14 transform rounded-md bg-hoverColor p-3 text-sm font-medium text-highlightColor shadow-md">
-          Kirim Aspirasi
-        </div>
-      )}
 
       <div
         className={cn(
-          "absolute right-0 top-1/2 -translate-y-1/2 transform flex-col gap-2 rounded-l-3xl border-y-[3px] border-l-[3px] border-highlightColor/80 bg-hoverColor py-3 pl-3 pr-2 text-highlightColor/70 shadow-md transition-transform duration-300",
-          openCto === false ? "flex translate-x-0" : "hidden translate-x-full",
+          "absolute -top-16 right-14 rounded-md bg-hoverColor p-3 text-sm font-medium text-highlightColor shadow-md transition-opacity duration-300",
+          openToolTips === false ? "opacity-0" : "opacity-100",
+        )}
+      >
+        Kirim Aspirasi
+      </div>
+
+      <div
+        className={cn(
+          "absolute right-0 top-1/2 flex -translate-y-1/2 transform flex-col gap-2 rounded-l-3xl border-y-[3px] border-l-[3px] border-highlightColor/80 bg-hoverColor py-3 pl-3 pr-2 text-highlightColor/70 shadow-md transition-transform duration-300",
+          openCto === false ? "translate-x-0" : "translate-x-full",
         )}
       >
         <MdKeyboardDoubleArrowRight
           size={22}
           onClick={() => setOpenCto(true)}
           className={cn(
-            "absolute bottom-0 right-10 z-[99] transform cursor-pointer rounded-full bg-highlightColor p-1 text-backgroundColor",
+            "absolute right-10 top-1/2 z-[99] -translate-y-1/2 transform cursor-pointer rounded-full bg-highlightColor p-1 text-backgroundColor",
             openCto === true && "hidden",
           )}
         />

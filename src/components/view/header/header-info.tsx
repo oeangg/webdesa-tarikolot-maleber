@@ -25,25 +25,25 @@ export const HeaderInfo = ({ header }: PropsType) => {
         <div className="flex flex-row gap-2 text-backgroundSecondary/70 md:gap-3">
           <NavLink
             to="https://www.facebook.com/"
-            className="flex h-7 w-7 items-center justify-center rounded-sm border border-backgroundSecondary/70 p-1 transition-all duration-300 ease-in-out hover:border-hoverColor hover:text-hoverColor"
+            className="flex h-7 w-7 items-center justify-center rounded-sm border border-backgroundSecondary/20 p-1 transition-all duration-300 ease-in-out hover:border-hoverColor/70 hover:text-hoverColor"
           >
             <FaFacebookF size={18} />
           </NavLink>
           <NavLink
             to="https://www.instagram.com/"
-            className="flex h-7 w-7 items-center justify-center rounded-sm border border-backgroundSecondary/70 p-1 transition-all duration-300 ease-in-out hover:border-hoverColor hover:text-hoverColor"
+            className="flex h-7 w-7 items-center justify-center rounded-sm border border-backgroundSecondary/20 p-1 transition-all duration-300 ease-in-out hover:border-hoverColor/70 hover:text-hoverColor"
           >
             <FaInstagram size={18} />
           </NavLink>
           <NavLink
             to="https://www.tiktok.com/"
-            className="flex h-7 w-7 items-center justify-center rounded-sm border border-backgroundSecondary/70 p-1 transition-all duration-300 ease-in-out hover:border-hoverColor hover:text-hoverColor"
+            className="flex h-7 w-7 items-center justify-center rounded-sm border border-backgroundSecondary/20 p-1 transition-all duration-300 ease-in-out hover:border-hoverColor/70 hover:text-hoverColor"
           >
             <AiOutlineTikTok size={18} />
           </NavLink>
           <NavLink
             to="https://www.youtube.com/"
-            className="flex h-7 w-7 items-center justify-center rounded-sm border border-backgroundSecondary/70 p-1 transition-all duration-300 ease-in-out hover:border-hoverColor hover:text-hoverColor"
+            className="flex h-7 w-7 items-center justify-center rounded-sm border border-backgroundSecondary/20 p-1 transition-all duration-300 ease-in-out hover:border-hoverColor/70 hover:text-hoverColor"
           >
             <FaYoutube size={18} />
           </NavLink>
