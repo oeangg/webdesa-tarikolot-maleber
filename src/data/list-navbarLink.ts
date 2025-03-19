@@ -49,9 +49,10 @@ export const listNavbarLink = [
     text: "HPTM",
     href: "/hptm",
     submenu: [
+      { text: "Profil", href: "/hptm/profil" },
       { text: "Kegiatan", href: "/hptm/kegiatan" },
       { text: "Visi misi", href: "/hptm/visimisi" },
-      { text: "Struktur Organisasi", href: "/hptm/struktur" },
+      { text: "Pengurus", href: "/hptm/pengurus" },
       { text: "Laporan Kas", href: "/hptm/laporan" },
     ],
   },

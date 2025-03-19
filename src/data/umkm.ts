@@ -1,0 +1,81 @@
+export const listUMKM = [
+  {
+    id: 1,
+    nama: "Kedai D'hilmi",
+    deskripsi: "Jual Aneka Cemilan dan Catering",
+    slug: "kedai-dhilmi",
+    pemilik: "Mang Iip Syaiful",
+    alamat: "Dusun VI Tarikolot RT 26 RW 11 Ds Maleber Samping Mushola",
+    noTelp: ["089699328801", "08974702453"],
+    logo: "/umkm/kantin dhilmi/logo.jpg",
+    banner: "/umkm/kantin dhilmi/menu.jpg",
+    jambuka: "10:00 s.d 21:00 WIB",
+    profil: [
+      "Kedai Dhilmi didirikan dengan semangat untuk menyajikan hidangan rumahan yang berkualitas. Tersedia aneka makanan dan menu catering  dengan harga yang terjangkau. Kami percaya bahwa makanan yang baik tidak harus mahal, dan setiap orang berhak menikmati hidangan lezat yang dibuat dengan cinta.",
+      "Menu andalan kami Mie Ayama dan Nasi Goreng. Mie ayam kami dibuat dengan mie segar, potongan ayam yang empuk, dan kuah kaldu yang gurih. Setiap mangkuk mie ayam disajikan dengan taburan daun bawang dan pangsit goreng yang renyah.",
+      "Nasi goreng kami dimasak dengan bumbu rahasia yang menghasilkan cita rasa yang khas dan lezat. Kami menggunakan bahan-bahan segar dan berkualitas untuk memastikan setiap suapan nasi goreng kami memberikan kepuasan.",
+    ],
+    menu: [
+      {
+        menuId: 1,
+        nama: "Mie Ayam Biasa",
+        harga: 8000,
+        pic: "/umkm/kantin dhilmi/miayambiasa.jpg",
+      },
+      {
+        menuId: 2,
+        nama: "Mie Ayam Bakso",
+        harga: 10000,
+        pic: "/umkm/kantin dhilmi/miayambakso.jpg",
+      },
+      {
+        menuId: 3,
+        nama: "Nasi Goreng Ati Ampela",
+        harga: 14000,
+        pic: "/umkm/kantin dhilmi/nasigorengampla.jpg",
+      },
+      {
+        menuId: 4,
+        nama: "Ayma Pop sauce pedas",
+        harga: 15000,
+        pic: "/umkm/kantin dhilmi/ayamsaucepedas.jpg",
+      },
+    ],
+  },
+  {
+    id: 2,
+    nama: "Gado gado mang dodo",
+    deskripsi: "Aneka Gado gado dan Catering",
+    slug: "gado-gado-mang-dodo",
+    pemilik: "Mang Dodo",
+    alamat: "Dusun VI Tarikolot RT 26 RW 11 Ds Maleber pinggir jalan raya",
+    noTelp: ["0896993999999"],
+    logo: "/umkm/gado mangdodo/logo.jpg",
+    banner: "/umkm/gado mangdodo/menu.jpg",
+    jambuka: "08:30 s.d 14:30 WIB",
+    profil: [
+      "Gado-gado kami dibuat dengan sayuran segar seperti kacang panjang, kangkung, tauge, dan labu siam, yang direbus dengan sempurna. Ditambah dengan tahu, tempe, telur rebus, dan lontong yang lembut, serta disiram dengan bumbu kacang yang kaya rasa, maknyosnya ampe meresap ke ulu ati",
+      "Kami juga menyediakan berbagai pilihan tingkat kepedasan, sehingga Anda dapat menyesuaikan hidangan sesuai dengan selera Anda.",
+    ],
+    menu: [
+      {
+        menuId: 1,
+        nama: "Gado gado saja",
+        harga: 8000,
+        pic: "/umkm/dhilmi/miayambiasa.jpg",
+      },
+      {
+        menuId: 2,
+        nama: "Gado gado + telor",
+        harga: 110000,
+        pic: "/umkm/dhilmi/miayambakso.jpg",
+      },
+      {
+        menuId: 3,
+        nama: "Nasi Putih",
+        harga: 4000,
+        pic: "/umkm/dhilmi/nasigorengampla.jpg",
+      },
+    ],
+  },
+];

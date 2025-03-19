@@ -47,7 +47,7 @@ export const FormAspirasi = () => {
 
   return (
     <div
-      className="mx-auto flex w-full max-w-6xl flex-col justify-center gap-10 py-20"
+      className="mx-auto flex w-full max-w-6xl flex-col justify-center gap-10 px-4 py-20 md:px-0"
       onSubmit={handleSubmit(SubmitPesan)}
     >
       <SubTitle margin="center" title="Kontak Kami" />

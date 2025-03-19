@@ -64,7 +64,7 @@ export const HeroSection = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-transparent to-hoverColor opacity-90 duration-300 group-hover:opacity-60"></div>
           </NavLink>
           <NavLink
-            to="/hptm"
+            to="/hptm/profil"
             onMouseEnter={() => handleMouseEnter(2)}
             onMouseLeave={() => handleMouseLeave(2)}
             className="group relative flex h-24 w-24 flex-col items-center justify-center overflow-hidden rounded-xl bg-backgroundColor font-Inter text-sm font-semibold tracking-tighter text-primaryColor/70 duration-300 ease-in-out hover:text-primaryColor hover:shadow-md hover:shadow-backgroundColor/70"

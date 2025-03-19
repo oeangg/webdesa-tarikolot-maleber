@@ -23,6 +23,13 @@ import { TulisanDetailPage } from "./pages/tulisan-detail";
 import { UMKMpage } from "./pages/umkm-page";
 import { CtaSide_index } from "./components/view/cta-aspirasi/cta-index";
 import { FormAspirasiPage } from "./pages/form-aspirasi-page";
+import UmkmDetailPage from "./pages/umkm-detail-page";
+import { HptmLayout } from "./components/view/hptm/hptm-layout";
+import HPTMPage from "./pages/hptm-page";
+import { HPTMVisiMisi } from "./components/view/hptm/hptm-visimisi";
+import { HPTMKegiatan } from "./components/view/hptm/hptm-kegiatan";
+import { HPTMPengurus } from "./components/view/hptm/hptm-pengurus";
+import { HPTMLaporan } from "./components/view/hptm/hptm-laporan";
 
 function ScrollToTop() {
   const location = useLocation();
@@ -67,6 +74,15 @@ function App() {
         <Route path="/layanan" element={<PelayananPage />} />
         <Route path="/aspirasi" element={<FormAspirasiPage />} />
         <Route path="/umkm" element={<UMKMpage />} />
+        <Route path="/umkm/:slug" element={<UmkmDetailPage />} />
+        <Route element={<HptmLayout />}>
+          <Route path="/hptm/profil" element={<HPTMPage />} />
+          <Route path="/hptm/visimisi" element={<HPTMVisiMisi />} />
+          <Route path="/hptm/kegiatan" element={<HPTMKegiatan />} />
+          <Route path="/hptm/pengurus" element={<HPTMPengurus />} />
+          <Route path="/hptm/laporan" element={<HPTMLaporan />} />
+        </Route>
+
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <FooterPage />
