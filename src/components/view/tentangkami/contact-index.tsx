@@ -3,7 +3,7 @@ import { InfoKontak } from "./contact-info";
 
 export const ContactIndex = () => {
   return (
-    <div className="mx-auto flex w-full max-w-6xl flex-col justify-center gap-10 py-20">
+    <div className="mx-auto flex w-full max-w-6xl flex-col justify-center gap-10 py-28">
       <SubTitle margin="center" title="Tentang Kami" />
 
       <div className="grid w-full grid-cols-1 gap-10 px-4 md:grid-cols-2 md:px-0">

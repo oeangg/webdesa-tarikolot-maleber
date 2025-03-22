@@ -76,7 +76,7 @@ export const CardProfilPengurus = ({
       </div>
       <div className="flex flex-col items-center justify-center -space-y-0.5 p-1 text-sm font-light">
         <h3 className="tracking-tighter">{nama}</h3>
-        <p className="font-medium tracking-tight">{jabatan}</p>
+        <p className="font-medium uppercase tracking-normal">{jabatan}</p>
       </div>
     </NavLink>
   );
@@ -154,7 +154,7 @@ export const CardArticle = ({
             </p>
           </div>
         </div>
-        <h1 className="line-clamp-2 text-base font-semibold tracking-tight text-primaryColor/90 md:text-lg">
+        <h1 className="line-clamp-2 text-base font-semibold tracking-tight md:text-lg">
           {title}
         </h1>
         <p className="line-clamp-3 text-sm font-light leading-4 text-foregroundPrimary/80">
@@ -221,7 +221,7 @@ export const CardArticleHome = ({
         />
       </div>
       <div className="space-y-3 px-4 py-2">
-        <p className="line-clamp-2 text-base font-semibold tracking-tight text-primaryColor/90 md:text-lg">
+        <p className="line-clamp-2 text-base font-semibold tracking-tight md:text-lg">
           {title}
         </p>
         <p className="line-clamp-2 text-sm font-light tracking-wide text-foregroundPrimary/80">

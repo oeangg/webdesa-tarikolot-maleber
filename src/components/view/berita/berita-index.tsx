@@ -79,7 +79,7 @@ export const BeritaIndex = () => {
   }, [activeCategory, searchParams]);
 
   return (
-    <div className="mx-auto w-full max-w-6xl py-20">
+    <div className="mx-auto w-full max-w-6xl py-28">
       <SubTitle margin="center" title="Berita dari Kampung" />
 
       <FormCari

@@ -47,13 +47,13 @@ export const FormAspirasi = () => {
 
   return (
     <div
-      className="mx-auto flex w-full max-w-6xl flex-col justify-center gap-10 px-4 py-20 md:px-0"
+      className="mx-auto flex w-full max-w-6xl flex-col justify-center gap-10 px-4 py-28 md:px-0"
       onSubmit={handleSubmit(SubmitPesan)}
     >
       <SubTitle margin="center" title="Kontak Kami" />
       <p className="mx-auto max-w-lg text-left">
-        Kami senantiasa berusaha menjadi lebih baik. Silahkan sampaikan kritik
-        dan saran Anda melalui kontak di bawah ini :
+        Kami senantiasa berusaha untuk menjadi lebih baik. Silahkan sampaikan
+        kritik dan saran Anda dengan mengisi form di bawah ini :
       </p>
       <form className="mx-auto w-full max-w-lg">
         <div className="space-y-4">
@@ -110,7 +110,7 @@ export const FormAspirasi = () => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full rounded-lg bg-primaryColor px-4 py-2 text-base font-medium text-backgroundColor hover:bg-highlightColor disabled:cursor-progress disabled:opacity-70"
+            className="w-full rounded-lg bg-primaryColor px-4 py-3 text-base font-bold uppercase tracking-wide text-backgroundColor hover:bg-highlightColor disabled:cursor-progress disabled:opacity-70"
           >
             {loading ? "Mengirim..." : "Kirim Pesan"}
           </button>

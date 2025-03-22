@@ -5,7 +5,7 @@ import { SubTitle } from "../../ui/sub-tittle";
 
 export const UMKMIndex = () => {
   return (
-    <div className="mx-auto w-full max-w-6xl px-4 py-20 md:px-0">
+    <div className="mx-auto w-full max-w-6xl px-4 py-28 md:px-0">
       <SubTitle
         margin="center"
         title="Usaha Kecil dan Menengah"

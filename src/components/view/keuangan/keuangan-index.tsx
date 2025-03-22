@@ -2,7 +2,7 @@ import { SubTitle } from "../../ui/sub-tittle";
 
 export const KeuanganIndex = () => {
   return (
-    <div className="mx-auto w-full max-w-6xl py-20">
+    <div className="mx-auto w-full max-w-6xl py-28">
       <SubTitle margin="center" title="Laporan Keuangan" subtitle="Keuangan" />
 
       <div className="space-y-5">

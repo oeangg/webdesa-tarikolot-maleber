@@ -1,7 +1,7 @@
 import { NavLink, useParams } from "react-router";
 import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
 import { listTulisan } from "../../../data/tulisan";
-import { FaFacebook, FaInstagram, FaTiktok, FaTwitter } from "react-icons/fa6";
+import { FaFacebook, FaTiktok, FaWhatsapp, FaXTwitter } from "react-icons/fa6";
 
 export const TulisanDetail = () => {
   const { slug } = useParams();
@@ -11,26 +11,27 @@ export const TulisanDetail = () => {
     <div className="mx-auto w-full max-w-6xl px-4 pb-20 md:px-0">
       {findSlugInTulisan && (
         <div className="flex flex-col gap-10">
-          <div className="relative w-full">
+          <div className="relative h-[260px] w-full">
             <img
               src={findSlugInTulisan.cover}
               alt="cover"
-              style={{ width: "100%", height: "300px", objectFit: "cover" }}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
-            <div className="absolute top-0 h-[300px] w-full bg-gradient-to-b from-transparent to-backgroundColor"></div>
+            <div className="absolute top-0 h-[260px] w-full bg-gradient-to-b from-transparent to-backgroundColor"></div>
           </div>
           <div className="flex flex-col gap-10 md:flex-row">
             <div className="flex-1 space-y-10">
-              <div className="space-y-2">
-                <h1 className="text-xl font-semibold text-foregroundSecondary/80 md:text-2xl">
+              <div className="space-y-2 border-b-2 border-highlightColor/80">
+                <h1 className="text-xl font-bold text-primaryColor/80 md:text-2xl">
                   {findSlugInTulisan.title}
                 </h1>
-                <div className="flex flex-row gap-5">
-                  <p className="w-fit rounded-md border border-secondaryColor bg-transparent px-2 py-1 text-center text-sm font-light">
+
+                <div className="flex flex-row gap-5 text-primaryColor/80">
+                  <p className="w-fit text-center text-base font-medium">
                     {findSlugInTulisan.date}
                   </p>
-                  <p className="w-fit rounded-md border border-secondaryColor bg-backgroundSecondary px-2 py-1 text-center text-sm font-light">
-                    {findSlugInTulisan.author}
+                  <p className="w-fit text-center text-base font-normal">
+                    Ditulis oleh : {findSlugInTulisan.author}
                   </p>
                 </div>
               </div>
@@ -50,36 +51,36 @@ export const TulisanDetail = () => {
             </div>
             <div className="basis-1/5 space-y-5">
               <h2>Tag </h2>
-              <p className="w-fit rounded-md bg-primaryColor px-2 py-1 text-center text-xs font-light text-backgroundColor/80">
+              <p className="w-fit rounded-md bg-highlightColor px-3 py-1 text-center text-xs font-light tracking-wide text-backgroundColor">
                 {findSlugInTulisan.category}
               </p>
               <div>
-                <h2>Share </h2>
+                <h2>Bagikan </h2>
                 <div className="mb-4 w-full border-b border-borderPrimary"></div>
                 <div className="flex flex-row gap-2 text-primaryColor/80">
                   <NavLink
                     to="https://www.facebook.com/"
-                    className="flex items-center justify-center rounded-full border border-backgroundColor p-1 transition-all duration-300 ease-in-out"
+                    className="flex items-center justify-center rounded-full border border-primaryColor p-2 transition-all duration-300 ease-in-out"
                   >
                     <FaFacebook size={20} />
                   </NavLink>
                   <NavLink
-                    to="https://www.instagram.com/"
-                    className="flex items-center justify-center rounded-full border border-backgroundColor p-1 transition-all duration-300 ease-in-out"
+                    to="https://www.whatshapp.com/"
+                    className="flex items-center justify-center rounded-full border border-primaryColor p-2 transition-all duration-300 ease-in-out"
                   >
-                    <FaInstagram size={20} />
+                    <FaWhatsapp size={20} />
                   </NavLink>
                   <NavLink
                     to="https://www.tiktok.com/"
-                    className="flex items-center justify-center rounded-full border border-backgroundColor p-1 transition-all duration-300 ease-in-out"
+                    className="flex items-center justify-center rounded-full border border-primaryColor p-2 transition-all duration-300 ease-in-out"
                   >
                     <FaTiktok size={20} />
                   </NavLink>
                   <NavLink
                     to="https://www.twitter.com/"
-                    className="flex items-center justify-center rounded-full border border-backgroundColor p-1 transition-all duration-300 ease-in-out"
+                    className="flex items-center justify-center rounded-full border border-primaryColor p-2 transition-all duration-300 ease-in-out"
                   >
-                    <FaTwitter size={20} />
+                    <FaXTwitter size={20} />
                   </NavLink>
                 </div>
               </div>

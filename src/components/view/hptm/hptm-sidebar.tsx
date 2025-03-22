@@ -9,7 +9,7 @@ export const HptmSideBarLayout = () => {
 
   if (hptmMenu && hptmMenu.submenu && hptmMenu.submenu.length > 0) {
     return (
-      <div className="hidden w-full py-20 md:flex md:flex-col">
+      <div className="hidden w-full py-28 md:flex md:flex-col">
         <h2 className="mb-8">Tentang HPTM :</h2>
         <ul className="flex w-full flex-col gap-2 text-sm font-normal">
           {hptmMenu.submenu.map((hptm) => (

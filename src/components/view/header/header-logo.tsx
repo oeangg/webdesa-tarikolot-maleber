@@ -13,7 +13,7 @@ export const HeaderLogo = () => {
         alt="icon header"
         style={{ height: "28px", width: "auto" }}
       />
-      <div className="flex flex-col -space-y-1.5 font-Inter text-sm font-bold text-primaryColor/70">
+      <div className="flex flex-col -space-y-1.5 font-Inter text-sm font-bold text-backgroundColor/70">
         <span className="tracking-normal">Dusun VI Tarikolot</span>
         <span className="uppercase tracking-widest">Desa Maleber</span>
       </div>

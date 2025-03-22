@@ -100,12 +100,12 @@ export const GalleryImage = () => {
             architecto maiores eius. Veritatis, voluptate.
           </p>
         </div>
-        <div className="flex h-full w-full basis-2/3 flex-wrap items-center justify-center gap-2">
+        <div className="flex h-full w-full basis-2/3 flex-wrap items-center justify-center gap-1">
           {images.map((image, index) => (
             <div
               key={index}
               className={cn(
-                "group h-28 max-w-36 overflow-hidden",
+                "group h-28 max-w-36 overflow-hidden border-4 border-backgroundColor/40 hover:border-backgroundColor",
                 index % 2 === 0 && "h-32 max-w-28",
               )}
             >

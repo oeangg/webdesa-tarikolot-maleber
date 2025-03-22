@@ -9,19 +9,16 @@ export const ProfilSideBarLayout = () => {
 
   if (profilMenu && profilMenu.submenu && profilMenu.submenu.length > 0) {
     return (
-      <div className="hidden w-full md:flex md:flex-col py-20">
+      <div className="hidden w-full py-28 md:flex md:flex-col">
         <h2 className="mb-8">Tentang Kampung :</h2>
-        <ul
-          className="flex flex-col gap-2 font-normal text-sm w-full
-        "
-        >
+        <ul className="flex w-full flex-col gap-2 text-sm font-normal">
           {profilMenu.submenu.map((submenuItem) => (
             <li
               key={submenuItem.href}
               className={cn(
                 "group hover:border-b hover:border-highlightColor",
                 location.pathname === submenuItem.href &&
-                  "border-b border-primaryColor"
+                  "border-b border-primaryColor",
               )}
             >
               <NavLink

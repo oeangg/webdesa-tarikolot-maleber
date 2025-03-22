@@ -32,7 +32,7 @@ export const ModalGallery = ({ images, onClose, isOpen, index }: PropsType) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] flex w-full items-center justify-center bg-black bg-opacity-70">
+    <div className="fixed inset-0 z-[999] flex w-full items-center justify-center bg-black bg-opacity-70">
       <IoClose
         size={44}
         onClick={onClose}

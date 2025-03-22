@@ -39,7 +39,7 @@ export const Carousel: React.FC<CarouselProps> = ({ images }) => {
       {/* //menampilkan image */}
       <div
         ref={carouselRef}
-        className="relative flex h-screenMinusNav w-full transition-transform duration-300 ease-in-out"
+        className="relative flex h-screen w-full transition-transform duration-300 ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((image, index) => (

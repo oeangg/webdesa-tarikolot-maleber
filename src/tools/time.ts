@@ -35,13 +35,13 @@ export function GetTime() {
   function Gretting() {
     const shour = date.getHours();
     if (shour <= 10) {
-      return "Wilujeung enjing Lur!";
+      return "Wilujeung Enjing!";
     } else if (shour <= 14) {
-      return "Wilujeung siang Lur!";
+      return "Wilujeung Siang!";
     } else if (shour <= 17) {
-      return "Wilujeung sonten Lur!";
+      return "Wilujeung Sonten!";
     } else {
-      return "Wilujeung weungi Lur!";
+      return "Wilujeung Weungi!";
     }
   }
   const thisGretting = Gretting();

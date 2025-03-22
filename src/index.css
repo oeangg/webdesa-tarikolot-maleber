@@ -24,7 +24,7 @@
   }
 
   h2 {
-    @apply text-xl font-semibold tracking-wide text-primaryColor/80;
+    @apply text-xl font-bold tracking-normal text-primaryColor/80;
   }
 
   input {

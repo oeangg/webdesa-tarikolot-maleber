@@ -2,6 +2,7 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import imgKepalaDusun from "/photo perangkat dusun/rocky.jpg";
 import { LinkButton } from "../../ui/link";
 import { SubTitle } from "../../ui/sub-tittle";
+import { GetTime } from "../../../tools/time";
 
 export const SambutanKadus = () => {
   return (
@@ -23,8 +24,9 @@ export const SambutanKadus = () => {
         </div>
         <div className="basis-1/2 space-y-5">
           <h2>Assalamualaikum Wr.Wb</h2>
-          <p className="font-normals text-base leading-5 md:leading-7">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+          <p className="text-base font-normal leading-5 md:leading-7">
+            <span className="font-semibold">{GetTime().thisGretting}</span>,
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
             aute m quos ut corporis laboriosam earum accusantium quas. Enim illo
             cupiditate quisquam accusantium, excepturi voluptas omnis ut
             ratione, voluptates nesciunt eaque!

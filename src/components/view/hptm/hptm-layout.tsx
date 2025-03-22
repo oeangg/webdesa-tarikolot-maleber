@@ -5,14 +5,13 @@ import { HptmSideBarLayout } from "./hptm-sidebar";
 export const HptmLayout = () => {
   return (
     <div className="w-full">
-      <div className="relative max-h-60 w-full">
+      <div className="relative h-[280px] w-full">
         <img
           src={imgHeader}
           alt="image header"
-          style={{ height: "auto", width: "100%", objectFit: "cover" }}
-          className="max-h-60"
+          style={{ height: "100%", width: "100%", objectFit: "cover" }}
         />
-        <div className="opacity-670 absolute inset-0 bg-gradient-to-t from-white to-transparent"></div>
+        <div className="absolute inset-0 h-[280px] bg-gradient-to-t from-white to-transparent"></div>
       </div>
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 md:grid-cols-4 md:px-0">
         <div className="col-span-3 py-10">

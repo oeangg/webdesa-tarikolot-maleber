@@ -8,7 +8,7 @@ export const TulisanTerbaru = () => {
   const stulisan = listTulisan.slice(0, 4);
   return (
     <div className="mx-auto max-w-6xl px-4 md:px-0">
-      <SubTitle title="Tulisan terbaru" subtitle="Tulisan" margin="left" />
+      <SubTitle title="Tulisan terbaru" margin="left" />
       <div className="mb-8 grid w-full gap-5 md:grid-cols-2">
         {stulisan.map((tulisan, index) => (
           <CardArticle key={index} {...tulisan} index={index} type="tulisan" />

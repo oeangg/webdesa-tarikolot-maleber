@@ -15,14 +15,14 @@ export const CtaSide_index = () => {
   };
 
   return (
-    <div className="fixed bottom-24 right-0 z-[100]">
+    <div className="fixed bottom-24 right-0 z-[90]">
       <BiMessageSquareDots
         size={38}
         onClick={handleOpenCto}
         onMouseEnter={() => setOpenToolTips(true)}
         onMouseLeave={() => setOpenToolTips(false)}
         className={cn(
-          "absolute right-2 top-1/2 z-[99] -translate-y-1/2 transform cursor-pointer rounded-full bg-highlightColor p-2 text-hoverColor transition-transform duration-300",
+          "absolute right-2 top-1/2 -translate-y-1/2 transform cursor-pointer rounded-full bg-highlightColor p-2 text-hoverColor transition-transform duration-300",
           openCto === false ? "translate-x-96" : "translate-x-0",
         )}
       />
@@ -47,7 +47,7 @@ export const CtaSide_index = () => {
           size={20}
           onClick={() => setOpenCto(true)}
           className={cn(
-            "absolute right-10 top-1/2 z-[99] -translate-y-1/2 transform cursor-pointer rounded-full border border-hoverColor bg-highlightColor p-[2px] text-backgroundColor",
+            "absolute right-9 top-1/2 -translate-y-1/2 transform cursor-pointer rounded-full border border-hoverColor bg-highlightColor p-[2px] text-backgroundColor",
             openCto === true && "hidden",
           )}
         />

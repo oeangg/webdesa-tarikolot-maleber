@@ -3,15 +3,16 @@ import { listUMKM } from "../../../data/umkm";
 import { TbUser } from "react-icons/tb";
 import { IoTimeOutline } from "react-icons/io5";
 import { SlLocationPin } from "react-icons/sl";
-import { FaFacebook, FaInstagram, FaTiktok, FaTwitter } from "react-icons/fa6";
+import { FaFacebook, FaTiktok, FaWhatsapp, FaXTwitter } from "react-icons/fa6";
 import { FiPhone } from "react-icons/fi";
+import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
 
 export const UmkmDetail = () => {
   const { slug } = useParams();
 
   const findUmkm = listUMKM.find((item) => item.slug === slug);
   return (
-    <div className="mx-auto w-full max-w-6xl px-4 py-20 md:px-0">
+    <div className="mx-auto w-full max-w-6xl px-4 py-28 md:px-0">
       {findUmkm && (
         <div className="space-y-8">
           {/* header */}
@@ -67,34 +68,40 @@ export const UmkmDetail = () => {
                   style={{ height: "100%", width: "100%", objectFit: "cover" }}
                 />
               </div>
+              <NavLink
+                to="/umkm"
+                className="flex flex-row gap-2 text-xs font-light text-primaryColor/90"
+              >
+                <MdKeyboardDoubleArrowLeft size={16} /> Kembali ke halaman UMKM
+              </NavLink>
             </div>
             <div className="basis-1/5">
-              <h2>Share </h2>
+              <h2>Bagikan </h2>
               <div className="mb-4 w-full border-b border-borderPrimary"></div>
               <div className="flex flex-row gap-2 text-primaryColor/80">
                 <NavLink
                   to="https://www.facebook.com/"
-                  className="flex items-center justify-center rounded-full border border-backgroundColor p-1 transition-all duration-300 ease-in-out"
+                  className="flex items-center justify-center rounded-full border border-primaryColor p-2 transition-all duration-300 ease-in-out"
                 >
                   <FaFacebook size={20} />
                 </NavLink>
                 <NavLink
-                  to="https://www.instagram.com/"
-                  className="flex items-center justify-center rounded-full border border-backgroundColor p-1 transition-all duration-300 ease-in-out"
+                  to="https://www.whatshapp.com/"
+                  className="flex items-center justify-center rounded-full border border-primaryColor p-2 transition-all duration-300 ease-in-out"
                 >
-                  <FaInstagram size={20} />
+                  <FaWhatsapp size={20} />
                 </NavLink>
                 <NavLink
                   to="https://www.tiktok.com/"
-                  className="flex items-center justify-center rounded-full border border-backgroundColor p-1 transition-all duration-300 ease-in-out"
+                  className="flex items-center justify-center rounded-full border border-primaryColor p-2 transition-all duration-300 ease-in-out"
                 >
                   <FaTiktok size={20} />
                 </NavLink>
                 <NavLink
                   to="https://www.twitter.com/"
-                  className="flex items-center justify-center rounded-full border border-backgroundColor p-1 transition-all duration-300 ease-in-out"
+                  className="flex items-center justify-center rounded-full border border-primaryColor p-2 transition-all duration-300 ease-in-out"
                 >
-                  <FaTwitter size={20} />
+                  <FaXTwitter size={20} />
                 </NavLink>
               </div>
             </div>
