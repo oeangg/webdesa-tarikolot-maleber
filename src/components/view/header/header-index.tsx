@@ -41,7 +41,7 @@ export const HeaderPage = () => {
   return (
     <header
       className={cn(
-        "fixed left-0 right-0 top-0 z-50 h-[70px] w-full transform shadow-sm transition-transform duration-300 ease-in-out",
+        "fixed left-0 right-0 top-0 z-30 h-[70px] w-full transform shadow-sm transition-transform duration-300 ease-in-out",
         header ? "translate-y-0" : "-translate-y-full",
       )}
     >

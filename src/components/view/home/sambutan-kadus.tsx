@@ -23,15 +23,17 @@ export const SambutanKadus = () => {
           />
         </div>
         <div className="basis-1/2 space-y-5">
-          <h2>Assalamualaikum Wr.Wb</h2>
-          <p className="text-base font-normal leading-5 md:leading-7">
+          <h3 className="text-xl font-medium tracking-wide">
+            Assalamualaikum Wr.Wb
+          </h3>
+          <p className="text-base font-medium leading-5 md:leading-7">
             <span className="font-semibold">{GetTime().thisGretting}</span>,
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
             aute m quos ut corporis laboriosam earum accusantium quas. Enim illo
             cupiditate quisquam accusantium, excepturi voluptas omnis ut
             ratione, voluptates nesciunt eaque!
           </p>
-          <p className="text-base font-normal leading-5 md:leading-7">
+          <p className="text-base font-medium leading-5 md:leading-7">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum ipsa
             magnam sed eveniet ut. Obcaecati quae dolorum eaque quidem neque.
             Repellat iusto eius enim fuga iste optio repellendus unde provident,

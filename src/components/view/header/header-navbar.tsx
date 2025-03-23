@@ -96,27 +96,19 @@ export const Navbar = ({ onClick, isMobile }: PropsType) => {
       {/* ul menu mobile */}
       <ul
         className={cn(
-          "absolute left-0 top-0 z-[100] block h-screen w-3/4 transform space-y-5 bg-backgroundColor pl-5 pt-3 text-sm font-medium tracking-tight transition-transform duration-300 ease-in-out",
+          "fixed left-0 top-[70px] z-50 block h-screen w-3/4 transform bg-secondaryColor px-6 pt-10 text-sm font-medium tracking-tight text-primaryColor/80 transition-transform duration-300 ease-in-out",
           isMobile ? "translate-x-0" : "-translate-x-full",
         )}
       >
-        <div className="mb-10">
-          <HeaderLogo />
-        </div>
         {listNavbarLink.map((link) => (
           <li
             key={link.id}
-            // onClick={() => isMobile && onClick()}
-            className={cn(
-              "flex items-center px-2 duration-300 hover:text-highlightColor md:py-5 lg:px-5",
-
-              location.pathname === link.href &&
-                "border-b-2 border-primaryColor",
-            )}
+            // onClick={() => onClick()}
+            className="flex flex-col rounded-md px-2 py-2 duration-300 hover:bg-backgroundColor"
           >
             {/* jika ada submenu tampilkan arrow  */}
             {link.submenu.length > 0 ? (
-              <span className="flex flex-row items-center justify-center gap-1">
+              <span className="flex flex-row gap-1">
                 {link.text}
                 <TiArrowSortedDown
                   size={22}
@@ -129,6 +121,7 @@ export const Navbar = ({ onClick, isMobile }: PropsType) => {
               <NavLink
                 to={link.href}
                 className="flex flex-row items-center gap-2"
+                onClick={() => onClick()}
               >
                 {link.text}
               </NavLink>
@@ -140,7 +133,7 @@ export const Navbar = ({ onClick, isMobile }: PropsType) => {
                 onMouseLeave={() =>
                   setOpenSubMenu((prev) => ({ ...prev, [link.id]: false }))
                 }
-                className="flex flex-col bg-backgroundSecondary text-primaryColor shadow-md"
+                className="top-0 flex flex-col bg-backgroundColor text-primaryColor"
               >
                 {link.submenu.map((sb, index) => (
                   <NavLink

@@ -1,7 +1,14 @@
 import { NavLink, useParams } from "react-router";
 import { listBerita } from "../../../data/berita";
 import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
-import { FaFacebook, FaTiktok, FaWhatsapp, FaXTwitter } from "react-icons/fa6";
+import {
+  FaFacebook,
+  FaRegUser,
+  FaTiktok,
+  FaWhatsapp,
+  FaXTwitter,
+} from "react-icons/fa6";
+import { IoTimeOutline } from "react-icons/io5";
 
 export const BeritaDetail = () => {
   const { slug } = useParams();
@@ -26,13 +33,15 @@ export const BeritaDetail = () => {
                   {findSlugInBerita.title}
                 </h1>
 
-                <div className="flex flex-row gap-5 text-primaryColor/80">
-                  <p className="w-fit text-center text-base font-medium">
-                    {findSlugInBerita.date}
-                  </p>
-                  <p className="w-fit text-center text-base font-normal">
-                    Diposting oleh : {findSlugInBerita.author}
-                  </p>
+                <div className="flex flex-row gap-5 text-base font-light text-highlightColor/70">
+                  <div className="flex flex-row items-center justify-center gap-1">
+                    <IoTimeOutline size={16} />
+                    <p className="w-fit">{findSlugInBerita.date}</p>
+                  </div>
+                  <div className="flex flex-row items-center justify-center gap-1">
+                    <FaRegUser size={14} />
+                    <p className="w-fit">{findSlugInBerita.author}</p>
+                  </div>
                 </div>
               </div>
 

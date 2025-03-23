@@ -1,7 +1,14 @@
 import { NavLink, useParams } from "react-router";
 import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
 import { listTulisan } from "../../../data/tulisan";
-import { FaFacebook, FaTiktok, FaWhatsapp, FaXTwitter } from "react-icons/fa6";
+import {
+  FaFacebook,
+  FaRegUser,
+  FaTiktok,
+  FaWhatsapp,
+  FaXTwitter,
+} from "react-icons/fa6";
+import { IoTimeOutline } from "react-icons/io5";
 
 export const TulisanDetail = () => {
   const { slug } = useParams();
@@ -26,13 +33,15 @@ export const TulisanDetail = () => {
                   {findSlugInTulisan.title}
                 </h1>
 
-                <div className="flex flex-row gap-5 text-primaryColor/80">
-                  <p className="w-fit text-center text-base font-medium">
-                    {findSlugInTulisan.date}
-                  </p>
-                  <p className="w-fit text-center text-base font-normal">
-                    Ditulis oleh : {findSlugInTulisan.author}
-                  </p>
+                <div className="flex flex-row gap-5 text-base font-light text-highlightColor/70">
+                  <div className="flex flex-row items-center justify-center gap-1">
+                    <IoTimeOutline size={16} />
+                    <p className="w-fit">{findSlugInTulisan.date}</p>
+                  </div>
+                  <div className="flex flex-row items-center justify-center gap-1">
+                    <FaRegUser size={14} />
+                    <p className="w-fit">{findSlugInTulisan.author}</p>
+                  </div>
                 </div>
               </div>
 

@@ -1,11 +1,11 @@
 import { NavLink, useParams } from "react-router";
 import { listUMKM } from "../../../data/umkm";
-import { TbUser } from "react-icons/tb";
 import { IoTimeOutline } from "react-icons/io5";
 import { SlLocationPin } from "react-icons/sl";
 import { FaFacebook, FaTiktok, FaWhatsapp, FaXTwitter } from "react-icons/fa6";
 import { FiPhone } from "react-icons/fi";
 import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
+import { FaRegUser } from "react-icons/fa";
 
 export const UmkmDetail = () => {
   const { slug } = useParams();
@@ -35,7 +35,7 @@ export const UmkmDetail = () => {
           </div>
           <div className="flex w-full flex-col gap-4 rounded-lg border border-borderPrimary bg-backgroundSecondary p-4 text-sm font-semibold tracking-tight text-primaryColor/70 md:flex-row md:gap-10 md:p-5">
             <div className="flex flex-row items-center justify-start gap-1">
-              <TbUser size={18} className="text-red-400" />
+              <FaRegUser size={16} className="text-red-400" />
               <p className="border-r border-borderPrimary">
                 {findUmkm.pemilik}
               </p>

@@ -15,7 +15,7 @@ export const CtaSide_index = () => {
   };
 
   return (
-    <div className="fixed bottom-24 right-0 z-[90]">
+    <div className="fixed bottom-24 right-0 z-[20]">
       <BiMessageSquareDots
         size={38}
         onClick={handleOpenCto}
